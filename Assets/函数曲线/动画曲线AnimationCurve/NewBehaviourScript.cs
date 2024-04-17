@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace AnimationCurveView
 {
+    /// <summary>
+    /// https://blog.csdn.net/fucun1984686003/article/details/81086630
+    /// </summary>
     public class NewBehaviourScript : MonoBehaviour
     {
         /// <summary>
