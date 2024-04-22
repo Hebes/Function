@@ -96,101 +96,101 @@ namespace XFramework
         /// <summary>
         /// 将字节数组转化成float
         /// </summary>
-        [DeserializeMethod("Float")]
-        public unsafe float GetFloat()
-        {
-            if (buffer == null)
-                return -1;
-            if (buffer.Length < index + sizeof(float))
-                return -1;
-            uint temp = (uint)(buffer[index++] | buffer[index++] << 8 | buffer[index++] << 16 | buffer[index++] << 24);
-            return *((float*)&temp);
-        }
+        //[DeserializeMethod("Float")]
+        //public unsafe float GetFloat()
+        //{
+        //    if (buffer == null)
+        //        return -1;
+        //    if (buffer.Length < index + sizeof(float))
+        //        return -1;
+        //    uint temp = (uint)(buffer[index++] | buffer[index++] << 8 | buffer[index++] << 16 | buffer[index++] << 24);
+        //    return *((float*)&temp);
+        //}
 
         /// <summary>
         /// 将字节数组转化成double
         /// </summary>
         [DeserializeMethod("Double")]
-        public unsafe double GetDouble()
-        {
-            if (buffer == null)
-                return -1;
-            if (buffer.Length < index + sizeof(float))
-                return -1;
+        //public unsafe double GetDouble()
+        //{
+        //    if (buffer == null)
+        //        return -1;
+        //    if (buffer.Length < index + sizeof(float))
+        //        return -1;
 
-            //UInt64 temp = (UInt64)(buffer[index++] | buffer[index++] << 8 | buffer[index++] << 16 | buffer[index++] << 24 | buffer[index++] << 32 | buffer[index++] << 40 | buffer[index++] << 48 | buffer[index++] << 56);
+        //    //UInt64 temp = (UInt64)(buffer[index++] | buffer[index++] << 8 | buffer[index++] << 16 | buffer[index++] << 24 | buffer[index++] << 32 | buffer[index++] << 40 | buffer[index++] << 48 | buffer[index++] << 56);
 
-            uint lo = (uint)(buffer[index++] | buffer[index++] << 8 | buffer[index++] << 16 | buffer[index++] << 24);
-            uint hi = (uint)(buffer[index++] | buffer[index++] << 8 | buffer[index++] << 16 | buffer[index++] << 24);
-            ulong temp = ((ulong)hi) << 32 | lo;
+        //    uint lo = (uint)(buffer[index++] | buffer[index++] << 8 | buffer[index++] << 16 | buffer[index++] << 24);
+        //    uint hi = (uint)(buffer[index++] | buffer[index++] << 8 | buffer[index++] << 16 | buffer[index++] << 24);
+        //    ulong temp = ((ulong)hi) << 32 | lo;
 
-            return *((double*)&temp);
-        }
+        //    return *((double*)&temp);
+        //}
 
-        [DeserializeMethod("Boolean")]
-        public bool GetBoolean()
-        {
-            return (buffer[index++] == 1);
-        }
+        //[DeserializeMethod("Boolean")]
+        //public bool GetBoolean()
+        //{
+        //    return (buffer[index++] == 1);
+        //}
 
-        [DeserializeMethod("Enum")]
-        public Enum GetEnum()
-        {
-            var vlue = GetInt32();
-            return default;
-        }
+        //[DeserializeMethod("Enum")]
+        //public Enum GetEnum()
+        //{
+        //    var vlue = GetInt32();
+        //    return default;
+        //}
 
         #region 数组
-        public float[] GetFloatArray1()
-        {
-            int length_0 = GetInt32();
+        //public float[] GetFloatArray1()
+        //{
+        //    int length_0 = GetInt32();
 
-            float[] array = new float[length_0];
-            for (int i = 0; i < length_0; i++)
-            {
-                array[i] = GetFloat();
-            }
+        //    float[] array = new float[length_0];
+        //    for (int i = 0; i < length_0; i++)
+        //    {
+        //        array[i] = GetFloat();
+        //    }
 
-            return array;
-        }
+        //    return array;
+        //}
 
-        public float[,] GetFloatArray2()
-        {
-            int length_0 = GetInt32();
-            int length_1 = GetInt32();
+        //public float[,] GetFloatArray2()
+        //{
+        //    int length_0 = GetInt32();
+        //    int length_1 = GetInt32();
 
-            float[,] array = new float[length_0, length_1];
-            for (int i = 0; i < length_0; i++)
-            {
-                for (int j = 0; j < length_1; j++)
-                {
-                    array[i, j] = GetFloat();
-                }
-            }
+        //    float[,] array = new float[length_0, length_1];
+        //    for (int i = 0; i < length_0; i++)
+        //    {
+        //        for (int j = 0; j < length_1; j++)
+        //        {
+        //            array[i, j] = GetFloat();
+        //        }
+        //    }
 
-            return array;
-        }
+        //    return array;
+        //}
 
-        public float[,,] GetFloatArray3()
-        {
-            int length_0 = GetInt32();
-            int length_1 = GetInt32();
-            int length_2 = GetInt32();
+        //public float[,,] GetFloatArray3()
+        //{
+        //    int length_0 = GetInt32();
+        //    int length_1 = GetInt32();
+        //    int length_2 = GetInt32();
 
-            float[,,] array = new float[length_0, length_1, length_2];
-            for (int i = 0; i < length_0; i++)
-            {
-                for (int j = 0; j < length_1; j++)
-                {
-                    for (int k = 0; k < length_2; k++)
-                    {
-                        array[i, j, k] = GetFloat();
-                    }
-                }
-            }
+        //    float[,,] array = new float[length_0, length_1, length_2];
+        //    for (int i = 0; i < length_0; i++)
+        //    {
+        //        for (int j = 0; j < length_1; j++)
+        //        {
+        //            for (int k = 0; k < length_2; k++)
+        //            {
+        //                array[i, j, k] = GetFloat();
+        //            }
+        //        }
+        //    }
 
-            return array;
-        }
+        //    return array;
+        //}
 
         public int[] GetIntArray1()
         {
