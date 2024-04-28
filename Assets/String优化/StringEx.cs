@@ -8,6 +8,7 @@ namespace String优化
     /// <summary>
     /// 字符串优化类
     /// https://www.jianshu.com/p/8bedbb22129c
+    /// https://blog.csdn.net/onelei1994/article/details/101054633
     /// </summary>
     public static class StringEx
     {

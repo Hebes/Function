@@ -45,10 +45,9 @@
     <Analyzer Include="D:\Unity\UnityEditor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\String优化\StringEx.cs" />
+     <Compile Include="Assets\String优化\Test.cs" />
      <Compile Include="Assets\UnityEditor修改分辨率\GameViewUtils.cs" />
-     <Compile Include="Assets\判断物体前后点积\Dot1.cs" />
-     <Compile Include="Assets\判断物体左右叉积\Cross1.cs" />
-     <Compile Include="Assets\旋转\Rotation.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\Entity.cs" />
      <Compile Include="Assets\血条跟随\Scripts\GameUICtrl.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureFsm.cs" />
@@ -81,6 +80,7 @@
      <Compile Include="Assets\流程\Procedure\DependenceModuleAttribute.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpLogsAction.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpOreAction.cs" />
+     <Compile Include="Assets\反射\Reflection.cs" />
      <Compile Include="Assets\流程\Procedure\示例\FSM\FsmManager.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\ToolComponent.cs" />
      <Compile Include="Assets\注解\GameMgr.cs" />
@@ -103,6 +103,7 @@
      <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapPlanner.cs" />
      <Compile Include="Assets\序列化\Serialize\BinaryWriter.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.cs" />
+     <Compile Include="Assets\判断物体前后点积\Dot1.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\ForgeComponent.cs" />
      <Compile Include="Assets\流程\Procedure\Singleton\MonoSingleton.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\Labourer.cs" />
@@ -132,6 +133,7 @@
      <Compile Include="Assets\流程\Procedure\IGameModule.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureBase.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\BackpackComponent.cs" />
+     <Compile Include="Assets\旋转\Rotation.cs" />
      <Compile Include="Assets\血条跟随\Scripts\FightMgr.cs" />
      <Compile Include="Assets\流程\Procedure\Singleton\MonoEvent.cs" />
      <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapAgent.cs" />
@@ -140,6 +142,7 @@
      <Compile Include="Assets\流程\Procedure\示例\Entity\IEntity.cs" />
      <Compile Include="Assets\序列化\Serialize\BinaryReader.cs" />
      <Compile Include="Assets\字符串优化\StringEx.cs" />
+     <Compile Include="Assets\判断物体左右叉积\Cross1.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\IronRockComponent.cs" />
      <Compile Include="Assets\调色\ColorPanel.cs" />
      <Compile Include="Assets\数据结构\Collections\Extend.CSharp.cs" />
@@ -162,6 +165,7 @@
      <Folder Include="Assets\多语言" />
      <Folder Include="Assets\序列化" />
      <Folder Include="Assets\虚拟摇杆\摇杆资源" />
+     <Folder Include="Assets\判断物体前后点积" />
      <Folder Include="Assets\血条跟随" />
      <None Include="Assets\Image自定义顶点数据实现圆角矩形\11.txt" />
      <Folder Include="Assets\热重载" />
@@ -186,6 +190,7 @@
      <Folder Include="Assets\流程\Procedure\示例\Entity" />
      <Folder Include="Assets\AI\GOAP\AI\GOAP" />
      <Folder Include="Assets\血条跟随\GUI\Prefabs" />
+     <Folder Include="Assets\判断物体左右叉积" />
      <Folder Include="Assets\流程\Procedure\示例\FSM" />
      <Folder Include="Assets\虚拟摇杆\摇杆资源\Script" />
      <Folder Include="Assets\Test" />
@@ -201,6 +206,7 @@
      <Folder Include="Assets\AI\GOAP\AI" />
      <None Include="Assets\来源.txt" />
      <Folder Include="Assets\IO" />
+     <Folder Include="Assets\旋转" />
      <Folder Include="Assets\AI\GOAP\Materials" />
      <Folder Include="Assets\血条跟随\GUI" />
      <Folder Include="Assets\AI\GOAP\GameData" />
