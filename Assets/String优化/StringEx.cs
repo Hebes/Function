@@ -7,6 +7,7 @@ namespace String优化
 {
     /// <summary>
     /// 字符串优化类
+    /// https://www.jianshu.com/p/8bedbb22129c
     /// </summary>
     public static class StringEx
     {
