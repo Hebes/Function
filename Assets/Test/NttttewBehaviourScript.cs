@@ -1,60 +1,45 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
+using UnityEngine.Profiling;
+using UnityEngine.UI;
 
 namespace MyNamespace
 {
-    [Serializable]
-    public class NttttewBehaviourScriptData
-    {
-        public List<T1> t1List ;
-
-        public NttttewBehaviourScriptData()
-        {
-            t1List = new List<T1>();
-        }
-    }
-    
     public class NttttewBehaviourScript : MonoBehaviour
     {
-        
+
+        public Text txt;
+        public StringBuilder sb;
+        public Collider collider;
 
         private void Awake()
         {
-            NttttewBehaviourScriptData nttttewBehaviourScriptData = new NttttewBehaviourScriptData();
-            nttttewBehaviourScriptData. t1List.Add(new T2());
-            nttttewBehaviourScriptData. t1List.Add(new T3());
-
-            string count = JsonUtility.ToJson(nttttewBehaviourScriptData);
-            Debug.Log(count);
+            //sb= new StringBuilder();
         }
-    }
 
-    public abstract class T1
-    {
-        public int temp1;
-    }
-
-    public class T2 : T1
-    {
-        public int temp2;
-
-        public T2()
+        private void Update()
         {
-            temp1 = 1;
-            temp2 = 2;
-        }
-    }
-
-    public class T3 : T1
-    {
-        public int temp3;
-
-        public T3()
-        {
-            temp1 = 1;
-            temp3 = 3;
+            
+            Debug.Log(collider.bounds.max);
+            // Profiler.BeginSample($"StringRun");
+            // if (Input.GetKeyDown(KeyCode.A))
+            // {
+            //     for (var i = 0; i < 100; i++)
+            //         sb.Append("你好");
+            //     txt.text = sb.ToString();
+            // }
+            //
+            // if (Input.GetKeyDown(KeyCode.B))
+            // {
+            //     var sb1 = "你好";
+            //     for (var i = 0; i < 100; i++)
+            //         sb1 += sb1;
+            //     txt.text = sb1;
+            // }
+            // Profiler.EndSample();
         }
     }
 }
