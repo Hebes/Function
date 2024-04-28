@@ -87,33 +87,33 @@ namespace XFramework
         /// 将float转化成字节数组加入字节流
         /// </summary>
         /// <param name="num">要转化的float</param>
-        [SerializeMethod("Single")]
-        public unsafe void AddFloat(float num)
-        {
-            uint temp = *(uint*)&num;
-            bufferList.Add((byte)temp);
-            bufferList.Add((byte)(temp >> 8));
-            bufferList.Add((byte)(temp >> 16));
-            bufferList.Add((byte)(temp >> 24));
-        }
+        //[SerializeMethod("Single")]
+        //public unsafe void AddFloat(float num)
+        //{
+        //    uint temp = *(uint*)&num;
+        //    bufferList.Add((byte)temp);
+        //    bufferList.Add((byte)(temp >> 8));
+        //    bufferList.Add((byte)(temp >> 16));
+        //    bufferList.Add((byte)(temp >> 24));
+        //}
 
         /// <summary>
         /// 将double转化成字节数组加入字节流
         /// </summary>
         /// <param name="num">要转化的double</param>
-        [SerializeMethod("Double")]
-        public unsafe void AddDouble(double num)
-        {
-            ulong temp = *(ulong*)&num;
-            bufferList.Add((byte)temp);
-            bufferList.Add((byte)(temp >> 8));
-            bufferList.Add((byte)(temp >> 16));
-            bufferList.Add((byte)(temp >> 24));
-            bufferList.Add((byte)(temp >> 32));
-            bufferList.Add((byte)(temp >> 40));
-            bufferList.Add((byte)(temp >> 48));
-            bufferList.Add((byte)(temp >> 56));
-        }
+        //[SerializeMethod("Double")]
+        //public unsafe void AddDouble(double num)
+        //{
+        //    ulong temp = *(ulong*)&num;
+        //    bufferList.Add((byte)temp);
+        //    bufferList.Add((byte)(temp >> 8));
+        //    bufferList.Add((byte)(temp >> 16));
+        //    bufferList.Add((byte)(temp >> 24));
+        //    bufferList.Add((byte)(temp >> 32));
+        //    bufferList.Add((byte)(temp >> 40));
+        //    bufferList.Add((byte)(temp >> 48));
+        //    bufferList.Add((byte)(temp >> 56));
+        //}
 
         [SerializeMethod("Boolean")]
         public void AddBoolen(bool value)
@@ -129,47 +129,47 @@ namespace XFramework
 
         #region 数组
 
-        public void AddFloatArray1(float[] array)
-        {
-            AddInt32(array.GetLength(0));
+        //public void AddFloatArray1(float[] array)
+        //{
+        //    AddInt32(array.GetLength(0));
 
-            for (int i = 0, length_0 = array.GetLength(0); i < length_0; i++)
-            {
-                AddFloat(array[i]);
-            }
-        }
+        //    for (int i = 0, length_0 = array.GetLength(0); i < length_0; i++)
+        //    {
+        //        AddFloat(array[i]);
+        //    }
+        //}
 
-        public void AddFloatArray2(float[,] array)
-        {
-            AddInt32(array.GetLength(0));
-            AddInt32(array.GetLength(1));
+        //public void AddFloatArray2(float[,] array)
+        //{
+        //    AddInt32(array.GetLength(0));
+        //    AddInt32(array.GetLength(1));
 
-            for (int i = 0, length_0 = array.GetLength(0); i < length_0; i++)
-            {
-                for (int j = 0, length_1 = array.GetLength(1); j < length_1; j++)
-                {
-                    AddFloat(array[i, j]);
-                }
-            }
-        }
+        //    for (int i = 0, length_0 = array.GetLength(0); i < length_0; i++)
+        //    {
+        //        for (int j = 0, length_1 = array.GetLength(1); j < length_1; j++)
+        //        {
+        //            AddFloat(array[i, j]);
+        //        }
+        //    }
+        //}
 
-        public void AddFloatArray3(float[,,] array)
-        {
-            AddInt32(array.GetLength(0));
-            AddInt32(array.GetLength(1));
-            AddInt32(array.GetLength(2));
+        //public void AddFloatArray3(float[,,] array)
+        //{
+        //    AddInt32(array.GetLength(0));
+        //    AddInt32(array.GetLength(1));
+        //    AddInt32(array.GetLength(2));
 
-            for (int i = 0, length_0 = array.GetLength(0); i < length_0; i++)
-            {
-                for (int j = 0, length_1 = array.GetLength(1); j < length_1; j++)
-                {
-                    for (int k = 0, length_2 = array.GetLength(2); k < length_2; k++)
-                    {
-                        AddFloat(array[i, j, k]);
-                    }
-                }
-            }
-        }
+        //    for (int i = 0, length_0 = array.GetLength(0); i < length_0; i++)
+        //    {
+        //        for (int j = 0, length_1 = array.GetLength(1); j < length_1; j++)
+        //        {
+        //            for (int k = 0, length_2 = array.GetLength(2); k < length_2; k++)
+        //            {
+        //                AddFloat(array[i, j, k]);
+        //            }
+        //        }
+        //    }
+        //}
 
 
         public void AddIntArray1(int[] array)
@@ -215,15 +215,15 @@ namespace XFramework
         }
 
 
-        public void AddVectorArray1(float[] array)
-        {
-            AddInt32(array.GetLength(0));
+        //public void AddVectorArray1(float[] array)
+        //{
+        //    AddInt32(array.GetLength(0));
 
-            for (int i = 0, length_0 = array.GetLength(0); i < length_0; i++)
-            {
-                AddFloat(array[i]);
-            }
-        }
+        //    for (int i = 0, length_0 = array.GetLength(0); i < length_0; i++)
+        //    {
+        //        AddFloat(array[i]);
+        //    }
+        //}
 
         #endregion
 
