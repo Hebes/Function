@@ -45,8 +45,6 @@
     <Analyzer Include="D:\Unity\UnityEditor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\String优化\StringEx.cs" />
-     <Compile Include="Assets\String优化\Test.cs" />
      <Compile Include="Assets\UnityEditor修改分辨率\GameViewUtils.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\Entity.cs" />
      <Compile Include="Assets\血条跟随\Scripts\GameUICtrl.cs" />
@@ -79,8 +77,8 @@
      <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffFirewoodAction.cs" />
      <Compile Include="Assets\流程\Procedure\DependenceModuleAttribute.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpLogsAction.cs" />
-     <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpOreAction.cs" />
      <Compile Include="Assets\反射\Reflection.cs" />
+     <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpOreAction.cs" />
      <Compile Include="Assets\流程\Procedure\示例\FSM\FsmManager.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\ToolComponent.cs" />
      <Compile Include="Assets\注解\GameMgr.cs" />
@@ -88,6 +86,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\WoodCutter.cs" />
      <Compile Include="Assets\AI\GOAP\AI\FSM\FSM.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopTreeAction.cs" />
+     <Compile Include="Assets\String优化\StringEx.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffLogsAction.cs" />
      <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapAction.cs" />
      <Compile Include="Assets\流程\Procedure\GameModuleBase.cs" />
@@ -97,6 +96,7 @@
      <Compile Include="Assets\多语言\LanguageManager.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopFirewoodAction.cs" />
      <Compile Include="Assets\流程\Procedure\示例\UIHelper.cs" />
+     <Compile Include="Assets\String优化\Test.cs" />
      <Compile Include="Assets\数据结构\Collections\List.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\SupplyPileComponent.cs" />
      <Compile Include="Assets\虚拟摇杆\摇杆资源\Script\JpyStickPanel.cs" />
@@ -141,8 +141,8 @@
      <Compile Include="Assets\AI\GOAP\GameData\ChoppingBlockComponent.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\IEntity.cs" />
      <Compile Include="Assets\序列化\Serialize\BinaryReader.cs" />
-     <Compile Include="Assets\字符串优化\StringEx.cs" />
      <Compile Include="Assets\判断物体左右叉积\Cross1.cs" />
+     <Compile Include="Assets\字符串优化\StringEx.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\IronRockComponent.cs" />
      <Compile Include="Assets\调色\ColorPanel.cs" />
      <Compile Include="Assets\数据结构\Collections\Extend.CSharp.cs" />
@@ -150,6 +150,7 @@
      <Compile Include="Assets\流程\Procedure\ProcedureManager.cs" />
      <Compile Include="Assets\反射\Utility.Reflection.cs" />
      <Compile Include="Assets\调色\ColorManager.cs" />
+     <Folder Include="Assets" />
      <Folder Include="Assets\数据结构" />
      <Folder Include="Assets\UnityEditor修改分辨率" />
      <Folder Include="Assets\AI" />
@@ -210,6 +211,7 @@
      <Folder Include="Assets\AI\GOAP\Materials" />
      <Folder Include="Assets\血条跟随\GUI" />
      <Folder Include="Assets\AI\GOAP\GameData" />
+     <Folder Include="Assets\String优化" />
      <Folder Include="Assets\AI\FSM" />
      <Folder Include="Assets\AI\GOAP\GameData\Labourers" />
      <Folder Include="Assets\流程\Procedure\Singleton" />

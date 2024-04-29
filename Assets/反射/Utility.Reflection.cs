@@ -4,6 +4,69 @@ using System.Reflection;
 
 namespace XFramework
 {
+    public static partial class HelperReflection
+    {
+        /// <summary>
+        /// 创建一个对象
+        /// </summary>
+        /// <typeparam name="T">类型</typeparam>
+        /// <param name="objs">参数</param>
+        public static T CreateInstance<T>(params object[] objs) where T : class
+        {
+            T instance;
+            if (objs != null)
+                instance = Activator.CreateInstance(typeof(T), objs) as T;
+            else
+                instance = Activator.CreateInstance(typeof(T)) as T;
+            return instance;
+        }
+        
+        /// <summary>
+        /// 创建一个对象
+        /// </summary>
+        /// <typeparam name="T">对象类型</typeparam>
+        /// <param name="type">类型</param>
+        /// <param name="objs">参数数组</param>
+        /// <returns></returns>
+        public static T CreateInstance<T>(Type type, params object[] objs) where T : class
+        {
+            T instance;
+            if (objs != null)
+                instance = Activator.CreateInstance(type, objs) as T;
+            else
+                instance = Activator.CreateInstance(type) as T;
+            return instance;
+        }
+        
+        /// <summary>
+        /// 获取一个类型的所有派生类
+        /// </summary>
+        /// <param name="typeBase">基类型</param>
+        /// <param name="assemblyName">程序集</param>
+        /// <returns></returns>
+        public static IEnumerable<Type> GetSonClass(Type typeBase, string assemblyName = "Assembly-CSharp")
+        {
+            List<Type> types = new List<Type>();
+            Assembly assembly = Assembly.Load(assemblyName);
+            if (assembly == null)
+            {
+                throw new System.Exception("没有找到程序集");
+            }
+
+            Type[] allType = assembly.GetTypes();
+            foreach (Type type in allType)
+            {
+                if (type.IsClass && !type.IsAbstract && type.IsSubclassOf(typeBase))
+                {
+                    types.Add(type);
+                }
+            }
+
+            return types;
+        }
+
+    }
+
     public static partial class Utility
     {
         /// <summary>
@@ -11,64 +74,11 @@ namespace XFramework
         /// </summary>
         public static class Reflection
         {
-            /// <summary>
-            /// 创建一个对象
-            /// </summary>
-            /// <typeparam name="T">类型</typeparam>
-            /// <param name="objs">参数</param>
-            public static T CreateInstance<T>(params object[] objs) where T : class
-            {
-                T instance;
-                if (objs != null)
-                    instance = Activator.CreateInstance(typeof(T), objs) as T;
-                else
-                    instance = Activator.CreateInstance(typeof(T)) as T;
-                return instance;
-            }
+           
 
-            /// <summary>
-            /// 创建一个对象
-            /// </summary>
-            /// <typeparam name="T">对象类型</typeparam>
-            /// <param name="type">类型</param>
-            /// <param name="objs">参数数组</param>
-            /// <returns></returns>
-            public static T CreateInstance<T>(Type type, params object[] objs) where T : class
-            {
-                T instance;
-                if (objs != null)
-                    instance = Activator.CreateInstance(type, objs) as T;
-                else
-                    instance = Activator.CreateInstance(type) as T;
-                return instance;
-            }
+            
 
-            /// <summary>
-            /// 获取一个类型的所有派生类
-            /// </summary>
-            /// <param name="typeBase">基类型</param>
-            /// <param name="assemblyName">程序集</param>
-            /// <returns></returns>
-            public static IEnumerable<Type> GetSonClass(Type typeBase, string assemblyName = "Assembly-CSharp")
-            {
-                List<Type> types = new List<Type>();
-                Assembly assembly = Assembly.Load(assemblyName);
-                if (assembly == null)
-                {
-                    throw new System.Exception("没有找到程序集");
-                }
-
-                Type[] allType = assembly.GetTypes();
-                foreach (Type type in allType)
-                {
-                    if (type.IsClass && !type.IsAbstract && type.IsSubclassOf(typeBase))
-                    {
-                        types.Add(type);
-                    }
-                }
-                return types;
-            }
-
+            
             /// <summary>
             /// 获取所有实现了typeBase的Type
             /// </summary>
@@ -112,11 +122,9 @@ namespace XFramework
             public static List<Type> GetTypesInAllAssemblies()
             {
                 List<Type> types = new List<Type>();
-                Assembly[] assemblys = AppDomain.CurrentDomain.GetAssemblies();
-                for (int i = 0; i < assemblys.Length; i++)
-                {
-                    types.AddRange(assemblys[i].GetTypes());
-                }
+                Assembly[] assemblyArray = AppDomain.CurrentDomain.GetAssemblies();
+                for (int i = 0; i < assemblyArray.Length; i++)
+                    types.AddRange(assemblyArray[i].GetTypes());
                 return types;
             }
 
@@ -140,6 +148,7 @@ namespace XFramework
                     {
                         continue;
                     }
+
                     foreach (var t in ts)
                     {
                         if (filter(t))
@@ -148,6 +157,7 @@ namespace XFramework
                         }
                     }
                 }
+
                 return types;
             }
 
@@ -166,8 +176,10 @@ namespace XFramework
                     {
                         return true;
                     }
+
                     sonType = sonType.BaseType;
                 }
+
                 return false;
             }
 
@@ -235,14 +247,8 @@ namespace XFramework
             /// </summary>
             public T Value
             {
-                get
-                {
-                    return getter();
-                }
-                set
-                {
-                    setter(value);
-                }
+                get { return getter(); }
+                set { setter(value); }
             }
 
             /// <summary>
@@ -302,6 +308,7 @@ namespace XFramework
                     typeNames.Add(type.FullName);
                 }
             }
+
             typeNames.Sort();
             return typeNames.ToArray();
         }
@@ -324,6 +331,7 @@ namespace XFramework
                     fields.Add(infos[i]);
                 }
             }
+
             return fields;
         }
 
@@ -347,6 +355,7 @@ namespace XFramework
                     }
                 }
             }
+
             return types;
         }
 
@@ -367,6 +376,7 @@ namespace XFramework
                     methods.Add(infos[i]);
                 }
             }
+
             return methods;
         }
     }
