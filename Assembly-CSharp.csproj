@@ -63,6 +63,7 @@
      <Compile Include="Assets\AI\GOAP\AI\FSM\FSMState.cs" />
      <Compile Include="Assets\IO\Utility.IO.cs" />
      <Compile Include="Assets\流程\Procedure\Game.cs" />
+     <Compile Include="Assets\反射\HelperReflection.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\MovableComponent.cs" />
      <Compile Include="Assets\Singleton.cs" />
      <Compile Include="Assets\AI\FSM\FSMState.cs" />
@@ -83,6 +84,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\ToolComponent.cs" />
      <Compile Include="Assets\注解\GameMgr.cs" />
      <Compile Include="Assets\血条跟随\Scripts\joystick.cs" />
+     <Compile Include="Assets\SLG游戏画行军线\Test.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\WoodCutter.cs" />
      <Compile Include="Assets\AI\GOAP\AI\FSM\FSM.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopTreeAction.cs" />
@@ -92,6 +94,8 @@
      <Compile Include="Assets\流程\Procedure\GameModuleBase.cs" />
      <Compile Include="Assets\为枚举提供自定义字符串\Test.cs" />
      <Compile Include="Assets\10万物品显示\SV\BagItem.cs" />
+     <Compile Include="Assets\SLG游戏画行军线\Resources\DrawLine\SetPropies.cs" />
+     <Compile Include="Assets\SLG游戏画行军线\Resources\DrawLine\LineManager.cs" />
      <Compile Include="Assets\多语言\LanguageText.cs" />
      <Compile Include="Assets\多语言\LanguageManager.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopFirewoodAction.cs" />
@@ -148,7 +152,6 @@
      <Compile Include="Assets\数据结构\Collections\Extend.CSharp.cs" />
      <Compile Include="Assets\血条跟随\Scripts\UIBlood.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureManager.cs" />
-     <Compile Include="Assets\反射\Utility.Reflection.cs" />
      <Compile Include="Assets\调色\ColorManager.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\数据结构" />
@@ -167,6 +170,7 @@
      <Folder Include="Assets\序列化" />
      <Folder Include="Assets\虚拟摇杆\摇杆资源" />
      <Folder Include="Assets\判断物体前后点积" />
+     <Folder Include="Assets\SLG游戏画行军线\Resources\DrawLine" />
      <Folder Include="Assets\血条跟随" />
      <None Include="Assets\Image自定义顶点数据实现圆角矩形\11.txt" />
      <Folder Include="Assets\热重载" />
@@ -179,6 +183,7 @@
      <Folder Include="Assets\血条跟随\Scripts" />
      <Folder Include="Assets\计算代码运行时间\1" />
      <Folder Include="Assets\AI\GOAP\Textures" />
+     <Folder Include="Assets\SLG游戏画行军线" />
      <Folder Include="Assets\面板拓展UI代码获取\1\CodeAutoGeneration" />
      <Folder Include="Assets\10万物品显示" />
      <Folder Include="Assets\数据结构\Collections" />
@@ -195,6 +200,7 @@
      <Folder Include="Assets\流程\Procedure\示例\FSM" />
      <Folder Include="Assets\虚拟摇杆\摇杆资源\Script" />
      <Folder Include="Assets\Test" />
+     <None Include="Assets\SLG游戏画行军线\Resources\DrawLine\lineShader.shader" />
      <Folder Include="Assets\流程\Procedure" />
      <Folder Include="Assets\10万物品显示\SV" />
      <None Include="Assets\编辑器运行时固定启动场景\1.txt" />
@@ -203,6 +209,7 @@
      <Folder Include="Assets\包围盒\AABB" />
      <Folder Include="Assets\注解" />
      <Folder Include="Assets\面板拓展UI代码获取" />
+     <Folder Include="Assets\SLG游戏画行军线\Resources" />
      <Folder Include="Assets\AI\GOAP" />
      <Folder Include="Assets\AI\GOAP\AI" />
      <None Include="Assets\来源.txt" />
