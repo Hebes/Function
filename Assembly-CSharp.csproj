@@ -78,13 +78,14 @@
      <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffFirewoodAction.cs" />
      <Compile Include="Assets\流程\Procedure\DependenceModuleAttribute.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpLogsAction.cs" />
+     <Compile Include="Assets\DateTime\DateTimeMono.cs" />
      <Compile Include="Assets\反射\Reflection.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpOreAction.cs" />
      <Compile Include="Assets\流程\Procedure\示例\FSM\FsmManager.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\ToolComponent.cs" />
-     <Compile Include="Assets\注解\GameMgr.cs" />
-     <Compile Include="Assets\血条跟随\Scripts\joystick.cs" />
      <Compile Include="Assets\SLG游戏画行军线\Test.cs" />
+     <Compile Include="Assets\血条跟随\Scripts\joystick.cs" />
+     <Compile Include="Assets\注解\GameMgr.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\WoodCutter.cs" />
      <Compile Include="Assets\AI\GOAP\AI\FSM\FSM.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopTreeAction.cs" />
@@ -211,6 +212,7 @@
      <Folder Include="Assets\面板拓展UI代码获取" />
      <Folder Include="Assets\SLG游戏画行军线\Resources" />
      <Folder Include="Assets\AI\GOAP" />
+     <Folder Include="Assets\DateTime" />
      <Folder Include="Assets\AI\GOAP\AI" />
      <None Include="Assets\来源.txt" />
      <Folder Include="Assets\IO" />
