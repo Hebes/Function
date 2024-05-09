@@ -92,6 +92,7 @@
      <Compile Include="Assets\String优化\StringEx.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffLogsAction.cs" />
      <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapAction.cs" />
+     <Compile Include="Assets\查找图片引用\SearchRefrenceEditorWindow.cs" />
      <Compile Include="Assets\流程\Procedure\GameModuleBase.cs" />
      <Compile Include="Assets\为枚举提供自定义字符串\Test.cs" />
      <Compile Include="Assets\10万物品显示\SV\BagItem.cs" />
@@ -179,6 +180,7 @@
      <Folder Include="Assets\流程\Procedure\示例\FSM\MouseFsm" />
      <Folder Include="Assets\反射" />
      <Folder Include="Assets\序列化\Serialize" />
+     <Folder Include="Assets\查找图片引用" />
      <Folder Include="Assets\AI\GOAP\Scenes" />
      <Folder Include="Assets\侧边弹窗" />
      <Folder Include="Assets\血条跟随\Scripts" />
