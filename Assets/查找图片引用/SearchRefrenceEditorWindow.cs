@@ -13,7 +13,7 @@ namespace 查找图片引用
         /// <summary>
         /// 查找引用
         /// </summary>
-        [MenuItem("Tool/查找图片引用")]
+        [MenuItem("Tools/查找图片引用")]
         static void SearchRefrence()
         {
             SearchRefrenceEditorWindow window = (SearchRefrenceEditorWindow)EditorWindow.GetWindow(typeof(SearchRefrenceEditorWindow), false, "Searching", true);

@@ -78,6 +78,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffFirewoodAction.cs" />
      <Compile Include="Assets\流程\Procedure\DependenceModuleAttribute.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpLogsAction.cs" />
+     <Compile Include="Assets\反射内存实力类查看数据\Test2.cs" />
      <Compile Include="Assets\DateTime\DateTimeMono.cs" />
      <Compile Include="Assets\反射\Reflection.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpOreAction.cs" />
@@ -98,9 +99,11 @@
      <Compile Include="Assets\10万物品显示\SV\BagItem.cs" />
      <Compile Include="Assets\SLG游戏画行军线\Resources\DrawLine\SetPropies.cs" />
      <Compile Include="Assets\SLG游戏画行军线\Resources\DrawLine\LineManager.cs" />
+     <Compile Include="Assets\反射内存实力类查看数据\ReflectiveMemory.cs" />
      <Compile Include="Assets\多语言\LanguageText.cs" />
      <Compile Include="Assets\多语言\LanguageManager.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopFirewoodAction.cs" />
+     <Compile Include="Assets\相机截图功能\ScreenCapture.cs" />
      <Compile Include="Assets\流程\Procedure\示例\UIHelper.cs" />
      <Compile Include="Assets\String优化\Test.cs" />
      <Compile Include="Assets\数据结构\Collections\List.cs" />
@@ -113,6 +116,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\ForgeComponent.cs" />
      <Compile Include="Assets\流程\Procedure\Singleton\MonoSingleton.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\Labourer.cs" />
+     <Compile Include="Assets\相机截图功能\ScreenCaptureEditor.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ForgeToolAction.cs" />
      <Compile Include="Assets\UnityEditor修改分辨率\Test.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\IEntityData.cs" />
@@ -142,6 +146,7 @@
      <Compile Include="Assets\旋转\Rotation.cs" />
      <Compile Include="Assets\血条跟随\Scripts\FightMgr.cs" />
      <Compile Include="Assets\流程\Procedure\Singleton\MonoEvent.cs" />
+     <Compile Include="Assets\相机截图功能\Camrea.cs" />
      <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapAgent.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\Blacksmith.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\ChoppingBlockComponent.cs" />
@@ -152,6 +157,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\IronRockComponent.cs" />
      <Compile Include="Assets\调色\ColorPanel.cs" />
      <Compile Include="Assets\数据结构\Collections\Extend.CSharp.cs" />
+     <Compile Include="Assets\反射内存实力类查看数据\Test1.cs" />
      <Compile Include="Assets\血条跟随\Scripts\UIBlood.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureManager.cs" />
      <Compile Include="Assets\调色\ColorManager.cs" />
@@ -184,6 +190,7 @@
      <Folder Include="Assets\AI\GOAP\Scenes" />
      <Folder Include="Assets\侧边弹窗" />
      <Folder Include="Assets\血条跟随\Scripts" />
+     <Folder Include="Assets\相机截图功能" />
      <Folder Include="Assets\计算代码运行时间\1" />
      <Folder Include="Assets\AI\GOAP\Textures" />
      <Folder Include="Assets\SLG游戏画行军线" />
@@ -224,6 +231,7 @@
      <Folder Include="Assets\AI\GOAP\GameData" />
      <Folder Include="Assets\String优化" />
      <Folder Include="Assets\AI\FSM" />
+     <Folder Include="Assets\反射内存实力类查看数据" />
      <Folder Include="Assets\AI\GOAP\GameData\Labourers" />
      <Folder Include="Assets\流程\Procedure\Singleton" />
      <Folder Include="Assets\血条跟随\Mats" />
