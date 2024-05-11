@@ -10,6 +10,7 @@ namespace 相机截图功能
 
         private void Update()
         {
+            return;
             if (Input.GetKeyDown(KeyCode.A))
                 isScreenShot = true;
         }
@@ -21,6 +22,7 @@ namespace 相机截图功能
         /// </summary>
         private void OnPostRender()
         {
+            return;
             if (isScreenShot)
             {
                 uiCanvas.enabled = false;

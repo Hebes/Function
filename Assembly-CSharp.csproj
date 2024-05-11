@@ -143,6 +143,7 @@
      <Compile Include="Assets\流程\Procedure\IGameModule.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureBase.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\BackpackComponent.cs" />
+     <Compile Include="Assets\编辑器拓展\EditorExtensions.cs" />
      <Compile Include="Assets\旋转\Rotation.cs" />
      <Compile Include="Assets\血条跟随\Scripts\FightMgr.cs" />
      <Compile Include="Assets\流程\Procedure\Singleton\MonoEvent.cs" />
@@ -205,6 +206,7 @@
      <Folder Include="Assets\面板拓展UI代码获取\1" />
      <Folder Include="Assets\流程\Procedure\示例\Entity" />
      <Folder Include="Assets\AI\GOAP\AI\GOAP" />
+     <Folder Include="Assets\编辑器拓展" />
      <Folder Include="Assets\血条跟随\GUI\Prefabs" />
      <Folder Include="Assets\判断物体左右叉积" />
      <Folder Include="Assets\流程\Procedure\示例\FSM" />
