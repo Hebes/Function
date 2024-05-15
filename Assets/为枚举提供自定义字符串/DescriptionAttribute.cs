@@ -21,9 +21,9 @@ namespace 为枚举提供自定义字符串
     /// </summary>
     public enum TimeUnitType
     {
-        [Description("ms")]     Millisecond,
-        [Description("s")]      Second,
-        [Description("m")]      Min,
-        [Description("h")]      Hour,
+        [Description("毫秒")]     Millisecond,
+        [Description("秒")]      Second,
+        [Description("分")]      Min,
+        [Description("小时")]      Hour,
     }
 }

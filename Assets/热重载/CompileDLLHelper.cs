@@ -12,7 +12,7 @@ namespace 热重载
     /// </summary>
     public class CompileDLLHelper
     {
-        [MenuItem("HTools/CompileDlls")]
+        [MenuItem("Tools/编译Dlls")]
         public static void CompileDll()
         {
 
