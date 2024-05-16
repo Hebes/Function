@@ -123,6 +123,7 @@
      <Compile Include="Assets\相机截图功能\ScreenCaptureEditor.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ForgeToolAction.cs" />
      <Compile Include="Assets\UnityEditor修改分辨率\Test.cs" />
+     <Compile Include="Assets\多语言\LanguageManager1.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\IEntityData.cs" />
      <Compile Include="Assets\虚拟摇杆\摇杆资源\Script\CubeMove.cs" />
      <Compile Include="Assets\侧边弹窗\MessageManager1.cs" />
@@ -134,6 +135,7 @@
      <Compile Include="Assets\流程\Procedure\示例\FSM\MouseFsm\MouseFsm.cs" />
      <Compile Include="Assets\热重载\CompileDLLHelper.cs" />
      <Compile Include="Assets\函数曲线\动画曲线AnimationCurve\NewBehaviourScript.cs" />
+     <Compile Include="Assets\多语言\Test.cs" />
      <Compile Include="Assets\宏控制面板\MacroHelper.cs" />
      <Compile Include="Assets\面板拓展UI代码获取\1\CodeAutoGeneration\GenerateCodeWindow.cs" />
      <Compile Include="Assets\侧边弹窗\Test.cs" />
@@ -505,11 +507,14 @@
      <Reference Include="ReportGeneratorMerged">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <Reference Include="Excel">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Excel.dll</HintPath>
      </Reference>
-     <Reference Include="EPPlus">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\EPPlus.dll</HintPath>
+     <Reference Include="ICSharpCode.SharpZipLib">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Newtonsoft.Json\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="LitJson">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\LitJson.dll</HintPath>
@@ -517,14 +522,11 @@
      <Reference Include="DOTween">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
      </Reference>
-     <Reference Include="Excel">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Excel.dll</HintPath>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
-     <Reference Include="Newtonsoft.Json">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Newtonsoft.Json\Newtonsoft.Json.dll</HintPath>
-     </Reference>
-     <Reference Include="ICSharpCode.SharpZipLib">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+     <Reference Include="EPPlus">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\EPPlus.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\Unity\UnityEditor\2022.3.7f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -963,13 +965,13 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="AA.csproj">
-      <Project>{7466f3e9-707f-4967-dca4-7489cfa849d3}</Project>
-      <Name>AA</Name>
-    </ProjectReference>
     <ProjectReference Include="DOTween.Modules.csproj">
       <Project>{0106eedc-3633-c7d5-68bf-6b35ffaf4092}</Project>
       <Name>DOTween.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="AA.csproj">
+      <Project>{7466f3e9-707f-4967-dca4-7489cfa849d3}</Project>
+      <Name>AA</Name>
     </ProjectReference>
     <ProjectReference Include="NewAssembly.csproj">
       <Project>{a982ce60-50a5-6e67-09dd-0173e3fb2593}</Project>
