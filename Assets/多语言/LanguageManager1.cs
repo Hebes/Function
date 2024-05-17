@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
-using ACLanguage;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace Assets.多语言
 {
@@ -12,32 +14,33 @@ namespace Assets.多语言
         Chinese = 0,
         English = 1,
     }
-    
+
+    public class LanguageData
+    {
+        public string chinese;
+
+        public string english;
+    }
+
     public class LanguageManager
     {
-        public static LanguageManager Instance{ get; set; }
-        List<(string,string)> LanguageDataList{ get; set; }
-        public ELanguageMode LanguageMode { get; set; }
-
-        private readonly string saveKey = "Language";
-        public Font Font { get; set; } //字体
+        public static LanguageManager Instance { get; set; }
+        private Dictionary<string, LanguageData> LanguageDataDic { get; set; }
+        public ELanguageMode LanguageMode { get; set; } = ELanguageMode.Chinese;
+        public Font Font { get; set; }
 
         public void Init()
         {
             Instance = this;
-            //可以用PlayerPrefs存储语言类型,这里直接首次用的英文
-            LanguageDataList = new List<(string, string)>();
+            LanguageDataDic = new Dictionary<string, LanguageData>();
         }
-        
+
         /// <summary>
         /// 切换语言
         /// </summary>
-        public void OnChangeLanguage(ELanguageMode languageMode,List<(string,string)> languageDataListValue)
+        public void OnChangeLanguage(ELanguageMode languageMode)
         {
             LanguageMode = languageMode;
-            LanguageDataList = languageDataListValue;
-            //保存数据
-            PlayerPrefs.SetInt(saveKey, (int)languageMode);
         }
 
         /// <summary>
@@ -48,18 +51,38 @@ namespace Assets.多语言
         {
             Font = fontValue;
         }
-        
+
         /// <summary>
         /// 获取文字
         /// </summary>
-        public string GetText(string key)
+        public string Get(string key)
         {
-            // LanguageDataList.con
-            // if (languageTextKeyDic.ContainsKey(key))
-            //     return languageTextKeyDic[key];
-            // Debug.Log("多语言未配置：" + key);
-            // return key;
-            return null;
+            if (LanguageDataDic.TryGetValue(key, out var value))
+            {
+                switch (LanguageMode)
+                {
+                    default:
+                    case ELanguageMode.Chinese:
+                        return value.chinese;
+                    case ELanguageMode.English:
+                        return value.english;
+                }
+            }
+
+            Debug.Log("多语言未配置：" + key);
+            return key;
+        }
+    }
+
+    public class LanguageComponent : MonoBehaviour
+    {
+        public Text text;       //组件
+        public string key;      //关键字
+
+        private void Awake()
+        {
+            text = GetComponent<Text>();
+            text.text = LanguageManager.Instance.Get(text.text);
         }
     }
 }
