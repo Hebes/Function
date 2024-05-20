@@ -124,7 +124,6 @@
      <Compile Include="Assets\多语言\LanguageComponent.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ForgeToolAction.cs" />
      <Compile Include="Assets\UnityEditor修改分辨率\Test.cs" />
-     <Compile Include="Assets\多语言\LanguageManager1.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\IEntityData.cs" />
      <Compile Include="Assets\虚拟摇杆\摇杆资源\Script\CubeMove.cs" />
      <Compile Include="Assets\数据结构七大查找算法\LookupAlgorithm.cs" />
@@ -143,7 +142,6 @@
      <Compile Include="Assets\侧边弹窗\Test.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\MineOreAction.cs" />
      <Compile Include="Assets\10万物品显示\SV\CustomSV.cs" />
-     <Compile Include="Assets\多语言\LanguageBridge.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.EntityInfo.cs" />
      <Compile Include="Assets\为枚举提供自定义字符串\DescriptionAttribute.cs" />
      <Compile Include="Assets\调色\ColorRGB.cs" />
