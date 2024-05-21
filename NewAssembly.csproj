@@ -222,7 +222,6 @@
      <Folder Include="Assets\Excel工具\Plugins\Excel\ExcelDataReader\Core\CsvFormat" />
      <None Include="Assets\Excel工具\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Excel工具\Plugins\TextMesh Pro\Sprites" />
-     <None Include="Assets\Excel工具\Editor\Excels\ExcelDes.txt" />
      <Folder Include="Assets\Excel工具\Plugins\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\Excel工具\Plugins\Excel\ExcelDataReader\Exceptions" />
      <Folder Include="Assets\Excel工具\Plugins\Excel\ExcelDataReader\Core\OpenXmlFormat\BinaryFormat" />

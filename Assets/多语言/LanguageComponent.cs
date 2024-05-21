@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace ACLanguage
 {
-    public class LanguageText : MonoBehaviour
+    public class LanguageComponent : MonoBehaviour
     {
         public string key;
 

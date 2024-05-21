@@ -19,29 +19,30 @@ namespace ACLanguage
     /// </summary>
     public class LanguageManager : MonoBehaviour
     {
-        public Toggle toggle1;//中文
-        public Toggle toggle2;//英文
+        public Toggle toggle1; //中文
+        public Toggle toggle2; //英文
         private Dictionary<string, string> LanguageDic { get; set; }
 
         public ELanguageMode LanguageMode { get; set; }
 
         private Dictionary<string, string> EnglishLanguageDic { get; set; } = new Dictionary<string, string>()
         {
-            {"1","Hello" },
+            { "1", "Hello" },
         };
+
         private Dictionary<string, string> ChineseLanguageDic { get; set; } = new Dictionary<string, string>()
         {
-            {"1","你好" },
+            { "1", "你好" },
         };
 
         private void Awake()
         {
             new LanguageBridge();
-            
+
             //可以用PlayerPrefs存储语言类型,这里直接首次用的英文
             LanguageDic = new Dictionary<string, string>();
 
-            OnChangeLanuage(ELanguageMode.Chinese);//初始化第一次中文
+            OnChangeLanuage(ELanguageMode.Chinese); //初始化第一次中文
 
             toggle1.onValueChanged.AddListener(Ontoggle1);
             toggle2.onValueChanged.AddListener((bool isOn) =>
@@ -98,5 +99,7 @@ namespace ACLanguage
             LanguageBridge.Instance.languageTextKeyDic = LanguageDic;
             LanguageBridge.Instance.OnLanguageChange();
         }
+        
+        
     }
 }
