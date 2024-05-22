@@ -208,6 +208,7 @@
      <Compile Include="Assets\Excel工具\Plugins\Excel\ExcelDataReader\Core\BinaryFormat\XlsWorksheet.cs" />
      <Compile Include="Assets\Excel工具\Plugins\Excel\ExcelDataReader\Core\OpenXmlFormat\XmlFormat\XmlWorkbookReader.cs" />
      <Compile Include="Assets\Excel工具\Editor\Tool\GenerateConfig\GenerateConfigTool.cs" />
+     <Compile Include="Assets\Excel工具\Editor\Tool\ExcelWrite\CheckExcelExcel.cs" />
      <Compile Include="Assets\Excel工具\Plugins\Excel\ExcelDataReader\Core\NumberFormat\NumberFormatString.cs" />
      <Compile Include="Assets\Excel工具\Plugins\Excel\ExcelDataReader\CellStyle.cs" />
      <Compile Include="Assets\Excel工具\Plugins\Excel\ExcelDataReader\Core\BinaryFormat\XlsBiffFont.cs" />
