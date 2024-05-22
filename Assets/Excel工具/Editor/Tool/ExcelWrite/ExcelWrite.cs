@@ -106,7 +106,7 @@ namespace Farm2D
 
         private void OnGUI()
         {
-            DrawSelectUI();
+            //DrawSelectUI();
             GUI.backgroundColor = Color.yellow;
             GUILayout.Space(5f);
             EditorGUILayout.BeginHorizontal();
@@ -122,7 +122,6 @@ namespace Farm2D
             EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("选择文件夹路径:", EditorStyles.label, GUILayout.Width(130));
             openFolderPath = EditorGUILayout.TextField(openFolderPath);
             EditorGUILayout.EndHorizontal();
 

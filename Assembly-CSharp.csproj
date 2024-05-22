@@ -81,6 +81,7 @@
      <Compile Include="Assets\流程\Procedure\DependenceModuleAttribute.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpLogsAction.cs" />
      <Compile Include="Assets\反射内存实力类查看数据\Test2.cs" />
+     <Compile Include="Assets\自制的消息提示框\Scripts\MessageBox.cs" />
      <Compile Include="Assets\DateTime\DateTimeMono.cs" />
      <Compile Include="Assets\反射\Reflection.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpOreAction.cs" />
@@ -159,6 +160,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\Blacksmith.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\ChoppingBlockComponent.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\IEntity.cs" />
+     <Compile Include="Assets\其他\Other.cs" />
      <Compile Include="Assets\序列化\Serialize\BinaryReader.cs" />
      <Compile Include="Assets\判断物体左右叉积\Cross1.cs" />
      <Compile Include="Assets\字符串优化\StringEx.cs" />
@@ -173,6 +175,8 @@
      <Folder Include="Assets" />
      <Folder Include="Assets\数据结构" />
      <Folder Include="Assets\UnityEditor修改分辨率" />
+     <Folder Include="Assets\其他" />
+     <Folder Include="Assets\自制的消息提示框\Prefabs" />
      <Folder Include="Assets\常见数据结构比较" />
      <Folder Include="Assets\数据结构七大查找算法" />
      <Folder Include="Assets\AI" />
@@ -188,6 +192,7 @@
      <Folder Include="Assets\为枚举提供自定义字符串" />
      <Folder Include="Assets\多语言" />
      <Folder Include="Assets\序列化" />
+     <Folder Include="Assets\自制的消息提示框\Scripts" />
      <Folder Include="Assets\虚拟摇杆\摇杆资源" />
      <Folder Include="Assets\判断物体前后点积" />
      <Folder Include="Assets\SLG游戏画行军线\Resources\DrawLine" />
@@ -198,6 +203,7 @@
      <Folder Include="Assets\流程\Procedure\示例\FSM\MouseFsm" />
      <Folder Include="Assets\反射" />
      <Folder Include="Assets\序列化\Serialize" />
+     <Folder Include="Assets\AI\HTN" />
      <Folder Include="Assets\查找图片引用" />
      <Folder Include="Assets\AI\GOAP\Scenes" />
      <Folder Include="Assets\侧边弹窗" />
@@ -225,9 +231,11 @@
      <Folder Include="Assets\流程\Procedure\示例\FSM" />
      <Folder Include="Assets\虚拟摇杆\摇杆资源\Script" />
      <Folder Include="Assets\Test" />
+     <Folder Include="Assets\自制的消息提示框" />
      <None Include="Assets\SLG游戏画行军线\Resources\DrawLine\lineShader.shader" />
      <Folder Include="Assets\流程\Procedure" />
      <Folder Include="Assets\10万物品显示\SV" />
+     <Folder Include="Assets\反射\反射字符串创建Action" />
      <None Include="Assets\编辑器运行时固定启动场景\1.txt" />
      <Folder Include="Assets\宏控制面板" />
      <Folder Include="Assets\函数曲线" />
@@ -251,11 +259,13 @@
      <Folder Include="Assets\反射内存实力类查看数据" />
      <Folder Include="Assets\AI\GOAP\GameData\Labourers" />
      <Folder Include="Assets\流程\Procedure\Singleton" />
+     <Folder Include="Assets\AI\分层有限状态机" />
      <Folder Include="Assets\API使用\DateTime" />
      <Folder Include="Assets\血条跟随\Mats" />
      <Folder Include="Assets\日志\远程日志" />
      <Folder Include="Assets\血条跟随\Models\Player" />
      <Folder Include="Assets\流程\Procedure\示例" />
+     <Folder Include="Assets\AI\机器学习" />
      <Folder Include="Assets\流程" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\UnityEditor\2022.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
