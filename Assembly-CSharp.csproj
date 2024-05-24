@@ -82,6 +82,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpLogsAction.cs" />
      <Compile Include="Assets\反射内存实力类查看数据\Test2.cs" />
      <Compile Include="Assets\自制的消息提示框\Scripts\MessageBox.cs" />
+     <Compile Include="Assets\碰撞检测\AABBCC\AABBCC.cs" />
      <Compile Include="Assets\DateTime\DateTimeMono.cs" />
      <Compile Include="Assets\反射\Reflection.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpOreAction.cs" />
@@ -95,6 +96,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopTreeAction.cs" />
      <Compile Include="Assets\String优化\StringEx.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffLogsAction.cs" />
+     <Compile Include="Assets\Excel插件编译\ExcelCompile.cs" />
      <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapAction.cs" />
      <Compile Include="Assets\查找图片引用\SearchRefrenceEditorWindow.cs" />
      <Compile Include="Assets\流程\Procedure\GameModuleBase.cs" />
@@ -143,6 +145,7 @@
      <Compile Include="Assets\侧边弹窗\Test.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\MineOreAction.cs" />
      <Compile Include="Assets\10万物品显示\SV\CustomSV.cs" />
+     <Compile Include="Assets\碰撞检测\AABBCC\IMathAABB.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.EntityInfo.cs" />
      <Compile Include="Assets\为枚举提供自定义字符串\DescriptionAttribute.cs" />
      <Compile Include="Assets\调色\ColorRGB.cs" />
@@ -182,6 +185,7 @@
      <Folder Include="Assets\AI" />
      <Folder Include="Assets\包围盒" />
      <Folder Include="Assets\Image自定义顶点数据实现圆角矩形" />
+     <Folder Include="Assets\Excel插件编译" />
      <Folder Include="Assets\API使用" />
      <Folder Include="Assets\血条跟随\GUI\GameUI" />
      <Folder Include="Assets\字符串优化" />
@@ -232,16 +236,19 @@
      <Folder Include="Assets\虚拟摇杆\摇杆资源\Script" />
      <Folder Include="Assets\Test" />
      <Folder Include="Assets\自制的消息提示框" />
+     <Folder Include="Assets\Resources" />
      <None Include="Assets\SLG游戏画行军线\Resources\DrawLine\lineShader.shader" />
      <Folder Include="Assets\流程\Procedure" />
      <Folder Include="Assets\10万物品显示\SV" />
      <Folder Include="Assets\反射\反射字符串创建Action" />
      <None Include="Assets\编辑器运行时固定启动场景\1.txt" />
+     <Folder Include="Assets\碰撞检测" />
      <Folder Include="Assets\宏控制面板" />
      <Folder Include="Assets\函数曲线" />
      <Folder Include="Assets\AI\GOAP\AI\FSM" />
      <Folder Include="Assets\包围盒\AABB" />
      <Folder Include="Assets\注解" />
+     <Folder Include="Assets\碰撞检测\AABBCC" />
      <Folder Include="Assets\面板拓展UI代码获取" />
      <Folder Include="Assets\SLG游戏画行军线\Resources" />
      <Folder Include="Assets\AI\GOAP" />
@@ -260,6 +267,7 @@
      <Folder Include="Assets\AI\GOAP\GameData\Labourers" />
      <Folder Include="Assets\流程\Procedure\Singleton" />
      <Folder Include="Assets\AI\分层有限状态机" />
+     <Folder Include="Assets\UI管理" />
      <Folder Include="Assets\API使用\DateTime" />
      <Folder Include="Assets\血条跟随\Mats" />
      <Folder Include="Assets\日志\远程日志" />

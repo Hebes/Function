@@ -45,47 +45,7 @@
     <Analyzer Include="D:\Unity\UnityEditor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_DateSave.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\ExcelWrite\ExcelWrite.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_Copy.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_Type.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\ExcelsChange\ClassData.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_String.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\RunBat\RunBat.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\Folder\DeleteFolder.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_FileAndFolder.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\Log\LogTool.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_AssetDatabase.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\ExcelsChange\ExcelChangeHelper.cs" />
-     <Compile Include="Assets\Excel工具\Plugins\codeandweb.com\Editor\SpritesheetImporter.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACToolFindConfig.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_Script.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\GenerateConfig\ConfigToolUI.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\ExcelsChange\BinaryData.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\Folder\OpenFolder.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_AB.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_Tag.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_UnityComponent.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\ExcelsChange\ExcelChange.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Core\ACCoreExpansion_Find.cs" />
-     <Compile Include="Assets\Excel工具\Plugins\codeandweb.com\Editor\UIImageSetSizeAndPivot.cs" />
-     <Compile Include="Assets\Excel工具\Editor\Tool\GenerateConfig\GenerateConfigTool.cs" />
-     <Folder Include="Assets\Excel工具\Plugins\Demigiant\DOTween\Editor\Imgs" />
-     <None Include="Assets\Excel工具\Editor\Excels\ExcelDes.txt" />
-     <Folder Include="Assets\Excel工具\Plugins\codeandweb.com\Editor" />
-     <Folder Include="Assets\Excel工具\Editor" />
-     <None Include="Assets\Excel工具\Plugins\codeandweb.com\Editor\SettingsTexturePackerImporter.txt" />
-     <Folder Include="Assets\Excel工具\Editor\Tool" />
-     <Folder Include="Assets\Excel工具\Plugins\Demigiant\DOTween\Editor" />
-     <Folder Include="Assets\Excel工具\Editor\Tool\ExcelWrite" />
-     <Folder Include="Assets\Excel工具\Editor\Tool\RunBat" />
-     <Folder Include="Assets\Excel工具\Editor\Core" />
-     <Folder Include="Assets\Excel工具\Editor\UnityEditorTool" />
-     <Folder Include="Assets\Excel工具\Editor\Tool\Folder" />
-     <Folder Include="Assets\Excel工具\Editor\Tool\Log" />
-     <Folder Include="Assets\Excel工具\Editor\Excels" />
-     <Folder Include="Assets\Excel工具\Editor\Tool\ExcelsChange" />
-     <Folder Include="Assets\Excel工具\Editor\Tool\GenerateConfig" />
+     <Folder Include="Assets\UI管理\" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\UnityEditor\2022.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -350,11 +310,20 @@
      <Reference Include="ReportGeneratorMerged">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
+     <Reference Include="Excel">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Excel.dll</HintPath>
+     </Reference>
      <Reference Include="unityplastic">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTweenEditor">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="ICSharpCode.SharpZipLib">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
@@ -365,6 +334,15 @@
      <Reference Include="Unity.VisualScripting.IonicZip">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.visualscripting@1.9.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
      </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Newtonsoft.Json\Newtonsoft.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="LitJson">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\LitJson.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTween">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
@@ -374,26 +352,26 @@
      <Reference Include="EPPlus">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\EPPlus.dll</HintPath>
      </Reference>
-     <Reference Include="LitJson">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\LitJson.dll</HintPath>
+     <Reference Include="DOTween46">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\UI管理\Assets\ZMUIFrameWork\ThirdLibrary\Demigiant\DOTween\DOTween46.dll</HintPath>
      </Reference>
-     <Reference Include="DOTween">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     <Reference Include="DemiLib">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\UI管理\Assets\ZMUIFrameWork\ThirdLibrary\Demigiant\DemiLib\DemiLib.dll</HintPath>
      </Reference>
-     <Reference Include="Excel">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Excel.dll</HintPath>
+     <Reference Include="DemiEditor">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\UI管理\Assets\ZMUIFrameWork\ThirdLibrary\Demigiant\DemiLib\Editor\DemiEditor.dll</HintPath>
      </Reference>
-     <Reference Include="TexturePackerImporter">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\codeandweb.com\Editor\TexturePackerImporter.dll</HintPath>
+     <Reference Include="DOTween50">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\UI管理\Assets\ZMUIFrameWork\ThirdLibrary\Demigiant\DOTween\DOTween50.dll</HintPath>
      </Reference>
-     <Reference Include="Newtonsoft.Json">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Newtonsoft.Json\Newtonsoft.Json.dll</HintPath>
+     <Reference Include="DOTweenPro">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\UI管理\Assets\ZMUIFrameWork\ThirdLibrary\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
      </Reference>
-     <Reference Include="DOTweenEditor">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+     <Reference Include="DOTweenProEditor">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\UI管理\Assets\ZMUIFrameWork\ThirdLibrary\Demigiant\DOTweenPro\Editor\DOTweenProEditor.dll</HintPath>
      </Reference>
-     <Reference Include="ICSharpCode.SharpZipLib">
-     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+     <Reference Include="DOTween43">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\UI管理\Assets\ZMUIFrameWork\ThirdLibrary\Demigiant\DOTween\DOTween43.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -854,13 +832,17 @@
       <Project>{6319b84b-ac5a-a0ea-7913-49d40408a1c3}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="DOTween.Modules.csproj">
+      <Project>{0106eedc-3633-c7d5-68bf-6b35ffaf4092}</Project>
+      <Name>DOTween.Modules</Name>
+    </ProjectReference>
     <ProjectReference Include="AA.csproj">
       <Project>{7466f3e9-707f-4967-dca4-7489cfa849d3}</Project>
       <Name>AA</Name>
     </ProjectReference>
-    <ProjectReference Include="DOTween.Modules.csproj">
-      <Project>{0106eedc-3633-c7d5-68bf-6b35ffaf4092}</Project>
-      <Name>DOTween.Modules</Name>
+    <ProjectReference Include="NewAssembly.csproj">
+      <Project>{a982ce60-50a5-6e67-09dd-0173e3fb2593}</Project>
+      <Name>NewAssembly</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

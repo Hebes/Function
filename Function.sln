@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTween.Modules", "DOTween.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA", "AA.csproj", "{7466f3e9-707f-4967-dca4-7489cfa849d3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{4f1e2d19-657f-a51c-df02-48f6a69c4505}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,8 @@ Global
 		{0106eedc-3633-c7d5-68bf-6b35ffaf4092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7466f3e9-707f-4967-dca4-7489cfa849d3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7466f3e9-707f-4967-dca4-7489cfa849d3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4f1e2d19-657f-a51c-df02-48f6a69c4505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4f1e2d19-657f-a51c-df02-48f6a69c4505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
