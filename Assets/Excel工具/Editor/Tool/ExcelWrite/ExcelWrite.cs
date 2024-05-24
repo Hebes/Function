@@ -1,4 +1,5 @@
-﻿using DG.Tweening.Plugins.Core.PathCore;
+﻿using System;
+using DG.Tweening.Plugins.Core.PathCore;
 using OfficeOpenXml;
 using System.Collections.Generic;
 using System.IO;
@@ -16,15 +17,43 @@ namespace Farm2D
     /// </summary>
     public class ExcelWrite : EditorWindow
     {
-        private static string LoadExcelPath = string.Empty; //新路径
-        private static string OldLoadExcelPath = string.Empty; //老路径
-        private bool isSelectFile = true; //点击加载路径
-        private Vector2 scrollPosition = Vector2.zero; //滑动
-        private Vector2 scrollExcel = Vector2.zero; //滑动
-        string[][] data = null; //数据
-        private string Message = string.Empty; //消息提示
-        private Dictionary<string, string> DesDic; //Excel描述信息
-        private string openFolderPath;
+        private static string _loadExcelPath = string.Empty; //Excel读取路径
+        private string _openFolderPath; //打开文件的路径
+        private Vector2 _scrollPosition, _scrollExcel = Vector2.zero; //滑动
+        private string[][] _data; //数据
+        private string _message = string.Empty; //消息提示
+        private readonly string _saveOpenFolderPathKey = "SaveOpenFolderPathKey"; //存储的字段
+        private readonly string _saveLoadExcelPathKey = "SaveLoadExcelPathKey"; //存储的字段
+        private static ExcelWrite _excelWrite;
+
+        private void Awake()
+        {
+            excelWriteWindow ??= GetWindow<ExcelWrite>();
+        }
+
+        [MenuItem("Tools/编辑Excel#E #E")]
+        public static void BuildPackageVersions()
+        {
+            if (!EditorWindow.HasOpenInstances<ExcelWrite>())
+            {
+                //_excelWrite = this;
+                //_editorWindow = GetWindow(typeof(ExcelWrite));
+                _excelWrite = GetWindow<ExcelWrite>();
+                _excelWrite.titleContent = new GUIContent("Excel数据读取");
+                _excelWrite.Show();
+                _excelWrite.Load();
+                //GetWindow(typeof(ExcelWrite), false, ).Show();
+            }
+            else
+            {
+                GetWindow(typeof(ExcelWrite)).Close();
+            }
+        }
+
+        private void OnDestroy()
+        {
+            _excelWrite.Save();
+        }
 
         /// <summary>
         /// 读取文件内容
@@ -54,18 +83,9 @@ namespace Farm2D
         /// </summary>
         private void OpenFilePanel()
         {
-            string directory = EditorUtility.OpenFilePanel("选择文件", LoadExcelPath, "xls,xlsx,csv");
+            string directory = EditorUtility.OpenFilePanel("选择文件", _loadExcelPath, "xls,xlsx,csv");
             if (!string.IsNullOrEmpty(directory))
-                LoadExcelPath = directory;
-        }
-
-        /// <summary>
-        /// 打开文件夹
-        /// </summary>
-        /// <returns></returns>
-        private string OpenFolderPanel()
-        {
-            return EditorUtility.OpenFolderPanel("选择文件夹", "", ""); //Select Folder
+                _loadExcelPath = directory;
         }
 
         /// <summary>
@@ -78,15 +98,6 @@ namespace Farm2D
         }
 
 
-        [MenuItem("Tool/编辑Excel#E #E")]
-        public static void BuildPackageVersions()
-        {
-            if (!EditorWindow.HasOpenInstances<ExcelWrite>())
-                GetWindow(typeof(ExcelWrite), false, "Excel数据填充").Show();
-            else
-                GetWindow(typeof(ExcelWrite)).Close();
-        }
-
         /// <summary>
         /// 绘制 选择要分析的UI
         /// </summary>
@@ -95,7 +106,6 @@ namespace Farm2D
             EditorGUILayout.Space();
             using (EditorGUILayout.HorizontalScope hScope = new EditorGUILayout.HorizontalScope())
             {
-                
                 Rect rect = hScope.rect;
                 rect.height = EditorGUIUtility.singleLineHeight;
                 GUI.Box(rect, "");
@@ -104,258 +114,247 @@ namespace Farm2D
             }
         }
 
-        private void OnGUI()
+        private static ExcelWrite excelWriteWindow = null;
+
+        //视图宽度一半
+        private float halfViewWidth;
+
+        //视图高度一半
+        private float halfViewHeight;
+        private float tempValue = 210f;
+        private float temp1Value;
+        private float temp2Value;
+
+        private void Save()
         {
-            //DrawSelectUI();
-            GUI.backgroundColor = Color.yellow;
-            GUILayout.Space(5f);
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("加载Excel文件", EditorStyles.boldLabel);
-            EditorGUILayout.LabelField("消息提示:", GUILayout.Width(80f));
-            EditorGUILayout.LabelField(Message, EditorStyles.label);
-            EditorGUILayout.EndHorizontal();
+            PlayerPrefs.SetString(_saveOpenFolderPathKey, _openFolderPath);
+            PlayerPrefs.SetString(_saveLoadExcelPathKey, _loadExcelPath);
+        }
 
-            EditorGUILayout.BeginHorizontal();
-            if (GUILayout.Button("打开文件夹...", GUILayout.Width(80f)))
-                openFolderPath = OpenFolderPanel();
-            isSelectFile = EditorGUILayout.ToggleLeft("Unity专用点击加载文件路径", isSelectFile, GUILayout.Width(130f));
-            EditorGUILayout.EndHorizontal();
+        private void Load()
+        {
+            _openFolderPath = PlayerPrefs.GetString(_saveOpenFolderPathKey);
+            _loadExcelPath = PlayerPrefs.GetString(_saveLoadExcelPathKey);
+        }
 
-            EditorGUILayout.BeginHorizontal();
-            openFolderPath = EditorGUILayout.TextField(openFolderPath);
-            EditorGUILayout.EndHorizontal();
+        private void LeftUI()
+        {
+            if (string.IsNullOrEmpty(_openFolderPath)) return;
+            if (!Directory.Exists(_openFolderPath)) _openFolderPath = string.Empty;
+            EditorGUILayout.BeginVertical(GUILayout.Width(150));
+            {
+                //C:\Users\Eros\Desktop\Demo\Function\Assets\Excel工具\Editor\Excels
+                _scrollExcel = GUILayout.BeginScrollView(_scrollExcel, GUILayout.Height(Screen.height), GUILayout.Width(200));
+                string[] paths1 = Directory.GetFiles(_openFolderPath);
+                foreach (var path in paths1)
+                {
+                    if (path.EndsWith("meta")) continue;
+                    string[] strings = path.Split('\\');
+                    string fileName = strings[^1];
+                    if (GUILayout.Button(fileName))
+                    {
+                        _loadExcelPath = path;
+                        ReadData();
+                    }
+                }
+            }
+            GUILayout.EndScrollView();
+            EditorGUILayout.EndVertical();
+        }
 
-
-            if (!string.IsNullOrEmpty(LoadExcelPath))
+        private void RightUI()
+        {
+            GUILayout.Space(10f);
+            EditorGUILayout.BeginVertical();
             {
                 EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.LabelField("选择文件路径:", EditorStyles.label, GUILayout.Width(130));
-                LoadExcelPath = EditorGUILayout.TextField(LoadExcelPath);
+                GUILayout.Space(5f);
+                EditorGUILayout.LabelField("加载Excel文件", EditorStyles.boldLabel, GUILayout.Width(80f));
+                if (GUILayout.Button("清空保存数据", GUILayout.Width(90f)))
+                    PlayerPrefs.DeleteAll();
+                if (GUILayout.Button("打开文件夹...", GUILayout.Width(80f)))
+                    _openFolderPath = EditorUtility.OpenFolderPanel("选择文件夹", default, default); //打开文件夹
+                EditorGUILayout.LabelField("消息提示:", GUILayout.Width(80f));
+                GUILayout.Space(5f);
+                EditorGUILayout.LabelField(_message, EditorStyles.label);
                 EditorGUILayout.EndHorizontal();
-            }
 
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField("选择的文件夹路径:", EditorStyles.label, GUILayout.Width(100));
+                _openFolderPath = EditorGUILayout.TextField(_openFolderPath);
+                if (!Directory.Exists(_openFolderPath)) _openFolderPath = string.Empty;
+                EditorGUILayout.EndHorizontal();
 
-            scrollExcel = GUILayout.BeginScrollView(scrollExcel, GUILayout.Height(60));
-            GUILayout.Space(10f);
-            string[] paths = Directory.GetFiles(openFolderPath);
-            EditorGUILayout.BeginVertical();
-
-            for (var i = 0; i < paths.Length; i++)
-            {
-                var path = paths[i];
-                if (path.EndsWith("meta")) continue;
-                string[] strings = path.Split('\\');
-                string fileName = strings[^1];
-                if (GUILayout.Button(fileName))
+                if (!string.IsNullOrEmpty(_loadExcelPath))
                 {
-                    LoadExcelPath = path;
-                    //ReadData();
-                }
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.LabelField("选择文件路径:", EditorStyles.label, GUILayout.Width(100));
+                    _loadExcelPath = EditorGUILayout.TextField(_loadExcelPath);
+                    EditorGUILayout.EndHorizontal();
 
-            }
-            EditorGUILayout.EndVertical();
-            GUILayout.EndScrollView();
-
-
-            EditorGUILayout.BeginHorizontal();
-            if (GUILayout.Button("读取数据", GUILayout.Width(80f)))
-                ReadData();
-            if (GUILayout.Button("添加数据", GUILayout.Width(80f)))
-            {
-                if (data == null)
-                {
-                    Message = "请先读取数据";
-                    return;
-                }
-
-                string[] strs = new string[data[0].Length];
-                List<string[]> strings = data.ToList();
-                strings.Add(strs);
-                data = strings.ToArray();
-                Message = "数据添加成功";
-            }
-
-            if (GUILayout.Button("写入数据", GUILayout.Width(80f)))
-            {
-                FileInfo _excelName = new FileInfo(LoadExcelPath);
-                //通过ExcelPackage打开文件
-                using (ExcelPackage package = new ExcelPackage(_excelName))
-                {
-                    //1表示第一个表
-                    ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
-                    //Debug.Log(worksheet.Name);
-                    for (int i = 0; i < data.Length; i++)
+                    EditorGUILayout.BeginHorizontal();
+                    if (GUILayout.Button("读取数据", GUILayout.Width(80f)))
+                        ReadData();
+                    if (GUILayout.Button("清除消息", GUILayout.Width(80f)))
+                        _message = string.Empty;
+                    if (GUILayout.Button("打开Excel", GUILayout.Width(80f)))
+                        Application.OpenURL(_loadExcelPath);
+                    if (GUILayout.Button("Excel转换", GUILayout.Width(80f)))
                     {
-                        string[] item1 = data[i];
-                        EditorGUILayout.BeginHorizontal(GUILayout.Width(position.width));
-                        for (global::System.Int32 j = 0; j < item1.Length; j++)
-                        {
-                            string item2 = item1[j];
-                            if (IsInteger(item2, out int number1))
-                                worksheet.SetValue(i + 1, j + 1, number1);
-                            else if (IsFloateger(item2, out float number2))
-                                worksheet.SetValue(i + 1, j + 1, number2);
-                            else if (string.IsNullOrEmpty(item2))
-                                worksheet.SetValue(i + 1, j + 1, null);
-                            else
-                                worksheet.Cells[i + 1, j + 1].Value = item2;
-                        }
-
-                        EditorGUILayout.EndHorizontal();
+                        ExcelChange.GenerateExcelInfo();
+                        _message = "转换成功";
                     }
 
-                    package.Save(); //储存
+                    if (GUILayout.Button("添加数据", GUILayout.Width(80f)))
+                    {
+                        if (_data == null)
+                        {
+                            _message = "请先读取数据";
+                            return;
+                        }
+
+                        string[] strArray = new string[_data[0].Length];
+                        List<string[]> strings = _data.ToList();
+                        strings.Add(strArray);
+                        _data = strings.ToArray();
+                        _message = "数据添加成功";
+                    }
+
+                    if (GUILayout.Button("写入数据", GUILayout.Width(80f)))
+                    {
+                        FileInfo _excelName = new FileInfo(_loadExcelPath);
+                        //通过ExcelPackage打开文件
+                        using (ExcelPackage package = new ExcelPackage(_excelName))
+                        {
+                            //1表示第一个表
+                            ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
+                            //Debug.Log(worksheet.Name);
+                            for (int i = 0; i < _data.Length; i++)
+                            {
+                                string[] item1 = _data[i];
+                                EditorGUILayout.BeginHorizontal(GUILayout.Width(position.width));
+                                for (global::System.Int32 j = 0; j < item1.Length; j++)
+                                {
+                                    string item2 = item1[j];
+                                    if (IsInteger(item2, out int number1))
+                                        worksheet.SetValue(i + 1, j + 1, number1);
+                                    else if (IsFloateger(item2, out float number2))
+                                        worksheet.SetValue(i + 1, j + 1, number2);
+                                    else if (string.IsNullOrEmpty(item2))
+                                        worksheet.SetValue(i + 1, j + 1, null);
+                                    else
+                                        worksheet.Cells[i + 1, j + 1].Value = item2;
+                                }
+
+                                EditorGUILayout.EndHorizontal();
+                            }
+
+                            package.Save(); //储存
+                        }
+
+                        _message = "数据写入成功";
+                    }
+
+                    tempValue = EditorGUILayout.FloatField(tempValue, GUILayout.Width(100));
+                    temp1Value = EditorGUILayout.FloatField(temp1Value, GUILayout.Width(100));
+                    temp2Value = EditorGUILayout.FloatField(temp2Value, GUILayout.Width(100));
+
+                    EditorGUILayout.EndHorizontal();
+
+                    RefreshData();
                 }
-
-                Message = "数据写入成功";
             }
+            EditorGUILayout.EndVertical();
+        }
 
-            if (GUILayout.Button("清除消息", GUILayout.Width(80f)))
-            {
-                Message = string.Empty;
-            }
+        private void OnGUI()
+        {
+            // halfViewWidth = excelWriteWindow.position.width / 2f;
+            // halfViewHeight = excelWriteWindow.position.height / 2f;
+            GUI.backgroundColor = Color.yellow;
 
-            //其他功能
-            if (GUILayout.Button("Excel转换", GUILayout.Width(80f)))
-            {
-                ExcelChange.GenerateExcelInfo();
-                Message = "转换成功";
-            }
-
-            if (GUILayout.Button("打开Excel", GUILayout.Width(80f)))
-            {
-                Application.OpenURL(LoadExcelPath);
-            }
-
-
+            EditorGUILayout.BeginHorizontal();
+            LeftUI();
+            RightUI();
             EditorGUILayout.EndHorizontal();
-
-
-            ClickFileLoadPath();
-            RefreshData();
-            EditorGUILayout.EndHorizontal();
-
         }
 
 
         private void RefreshData()
         {
-            if (data == null) return;
-            for (int i = 0; i < 3; i++)
+            if (_data == default) return;
+            var width = position.width - tempValue;
+            using (new EditorGUILayout.ScrollViewScope(new Vector2(_scrollPosition.x, 0f),
+                       GUILayout.Height(65f), GUILayout.Width(width)))
             {
-                string[] item1 = data[i];
-                EditorGUILayout.BeginHorizontal(GUILayout.Width(position.width));
-                if (GUILayout.Button("删除", GUILayout.Width(80f)))
+                for (var i = 0; i < 3; i++)
                 {
-                    //删除内存数据
-                    List<string[]> strings = data.ToList();
-                    strings.Remove(item1);
-                    data = strings.ToArray();
-                    //删除实际数据
-                    int deleteNumber = i;
-                    FileInfo _excelName = new FileInfo(LoadExcelPath);
-                    //通过ExcelPackage打开文件
-                    using (ExcelPackage package = new ExcelPackage(_excelName))
-                    {
-                        //1表示第一个表
-                        ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
-                        for (int j = 0; j < data[0].Length; j++)
-                            worksheet.SetValue(deleteNumber + 1, j + 1, null);
-                        package.Save(); //储存
-                    }
-
-                    Message = "数据删除成功";
-
+                    var item1 = _data[i];
+                    EditorGUILayout.BeginHorizontal(); //GUILayout.Width(position.width)
+                    GUILayout.Space(85f);
+                    ShowData(i, item1);
                     EditorGUILayout.EndHorizontal();
-                    continue;
                 }
-
-                for (global::System.Int32 j = 0; j < item1.Length; j++)
-                {
-                    string item2 = item1[j];
-                    data[i][j] = EditorGUILayout.TextField(item2);
-                }
-
-                EditorGUILayout.EndHorizontal();
             }
 
-            //显示数据
-            scrollPosition = GUILayout.BeginScrollView(scrollPosition); //GUILayout.Width(400), GUILayout.Height(500)
-            for (int i = 3; i < data.Length; i++)
+            using (var scrollViewScope = new EditorGUILayout.ScrollViewScope(_scrollPosition, GUILayout.Height(65f),GUILayout.Width(width)))
             {
-                string[] item1 = data[i];
-                EditorGUILayout.BeginHorizontal(GUILayout.Width(position.width));
-                if (GUILayout.Button("删除", GUILayout.Width(80f)))
+                _scrollPosition = scrollViewScope.scrollPosition;
+
+                for (int i = 3; i < _data.Length; i++)
                 {
-                    //删除内存数据
-                    List<string[]> strings = data.ToList();
-                    strings.Remove(item1);
-                    data = strings.ToArray();
-                    //删除实际数据
-                    int deleteNumber = i;
-                    FileInfo _excelName = new FileInfo(LoadExcelPath);
-                    //通过ExcelPackage打开文件
-                    using (ExcelPackage package = new ExcelPackage(_excelName))
+                    string[] item1 = _data[i];
+                    EditorGUILayout.BeginHorizontal(); //GUILayout.Width(position.width)
+                    if (GUILayout.Button("删除", GUILayout.Width(80f)))
                     {
-                        //1表示第一个表
-                        ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
-                        for (int j = 0; j < data[0].Length; j++)
-                            worksheet.SetValue(deleteNumber + 1, j + 1, null);
-                        package.Save(); //储存
+                        //删除内存数据
+                        List<string[]> strings = _data.ToList();
+                        strings.Remove(item1);
+                        _data = strings.ToArray();
+                        //删除实际数据
+                        int deleteNumber = i;
+                        FileInfo _excelName = new FileInfo(_loadExcelPath);
+                        //通过ExcelPackage打开文件
+                        using (ExcelPackage package = new ExcelPackage(_excelName))
+                        {
+                            //1表示第一个表
+                            ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
+                            for (int j = 0; j < _data[0].Length; j++)
+                                worksheet.SetValue(deleteNumber + 1, j + 1, null);
+                            package.Save(); //储存
+                        }
+
+                        _message = "数据删除成功";
                     }
 
-                    Message = "数据删除成功";
-
+                    ShowData(i, item1);
                     EditorGUILayout.EndHorizontal();
-                    continue;
                 }
-
-                for (global::System.Int32 j = 0; j < item1.Length; j++)
-                {
-                    string item2 = item1[j];
-                    data[i][j] = EditorGUILayout.TextField(item2);
-                }
-
-                EditorGUILayout.EndHorizontal();
             }
 
+            GUILayout.Space(temp1Value);
         }
 
         private void ReadData()
         {
-            data = LoadExcelPath.LoadExcel(); //读取Excel数据
-            Message = "数据读取成功";
+            _data = _loadExcelPath.LoadExcel(); //读取Excel数据
+            _message = "数据读取成功";
         }
 
-        private void ReadDataPathChange()
-        {
-            if (LoadExcelPath != OldLoadExcelPath)
-            {
-                OldLoadExcelPath = LoadExcelPath;
-                ReadData();
-            }
-        }
 
         /// <summary>
-        /// 点击文件加载路径,Unity专用
+        /// 显示数据
         /// </summary>
-        private void ClickFileLoadPath()
+        /// <param name="i"></param>
+        /// <param name="dataArray"></param>
+        private void ShowData(int i, string[] dataArray)
         {
-            if (isSelectFile == false) return;
-            if (Selection.activeObject != null)
+            for (var j = 0; j < dataArray.Length; j++)
             {
-                Repaint();
-                string path;
-                path = AssetDatabase.GetAssetPath(Selection.activeObject); //选择的文件的路径 
-                if (path.Contains("xls") || path.Contains("xlsx"))
-                {
-                    path = path.Split("Assets")[1];
-                    LoadExcelPath = string.Format($"{Application.dataPath}{path}");
-                    ReadDataPathChange();
-                }
+                var data = dataArray[j];
+                _data[i][j] = EditorGUILayout.TextField(data);
             }
         }
-
 
         private bool IsInteger(string input, out int number)
         {
