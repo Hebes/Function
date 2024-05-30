@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 /// <summary>
-/// 删除日志操作
+/// 丢弃原木操作
 /// </summary>
 public class DropOffLogsAction: GoapAction
 {
@@ -12,9 +12,9 @@ public class DropOffLogsAction: GoapAction
 	private SupplyPileComponent targetSupplyPile; // where we drop off the logs
 	
 	public DropOffLogsAction () {
-		addPrecondition ("hasLogs", true); // can't drop off logs if we don't already have some
-		addEffect ("hasLogs", false); // we now have no logs
-		addEffect ("collectLogs", true); // we collected logs
+		addPrecondition ("hasLogs", true); // can't drop off logs if we don't already have some 没有原木就不能送过来吗
+		addEffect ("hasLogs", false); // we now have no logs 我们现在没有原木了
+		addEffect ("collectLogs", true); // we collected logs 我们收集了原木
 	}
 	
 	

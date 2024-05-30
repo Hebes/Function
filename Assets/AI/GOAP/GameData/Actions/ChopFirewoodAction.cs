@@ -54,6 +54,11 @@ public class ChopFirewoodAction : GoapAction
 		return true; 
 	}
 	
+	/// <summary>
+	/// 检查程序前提
+	/// </summary>
+	/// <param name="agent"></param>
+	/// <returns></returns>
 	public override bool checkProceduralPrecondition (GameObject agent)
 	{
 		//找个离我们最近的砧板来劈木头

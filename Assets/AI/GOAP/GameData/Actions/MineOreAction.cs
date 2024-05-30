@@ -2,6 +2,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// 矿矿作用
+/// </summary>
 public class MineOreAction : GoapAction
 {
 	private bool mined = false;

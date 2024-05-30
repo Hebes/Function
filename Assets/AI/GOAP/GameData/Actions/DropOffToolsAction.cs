@@ -2,15 +2,18 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// 卸工具动作
+/// </summary>
 public class DropOffToolsAction : GoapAction
 {
 	private bool droppedOffTools = false;
 	private SupplyPileComponent targetSupplyPile; // where we drop off the  tools
 	
 	public DropOffToolsAction () {
-		addPrecondition ("hasNewTools", true); // can't drop off tools if we don't already have some
-		addEffect ("hasNewTools", false); // we now have no tools
-		addEffect ("collectTools", true); // we collected tools
+		addPrecondition ("hasNewTools", true); // can't drop off tools if we don't already have some 没有工具就不能放吗
+		addEffect ("hasNewTools", false); // we now have no tools 我们现在没有工具
+		addEffect ("collectTools", true); // we collected tools 我们收集工具
 	}
 	
 	

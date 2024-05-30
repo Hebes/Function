@@ -11,17 +11,9 @@ public class DropOffOreAction : GoapAction
 
     public DropOffOreAction()
     {
-        //如果我们没有，就不能再送点吗
-        //can't drop off ore if we don't already have some
-        addPrecondition("hasOre", true);
-
-        //我们现在没有了
-        //we now have no ore
-        addEffect("hasOre", false);
-
-        //我们收集矿石
-        //we collected ore
-        addEffect("collectOre", true);
+        addPrecondition("hasOre", true);//can't drop off ore if we don't already have some如果我们没有，就不能再送点吗
+        addEffect("hasOre", false);//we now have no ore 我们现在没有了
+        addEffect("collectOre", true);//we collected ore 我们收集矿石
     }
 
 
@@ -38,6 +30,7 @@ public class DropOffOreAction : GoapAction
 
     public override bool requiresInRange()
     {
+        //是的，我们得靠近补给堆，这样我们才能放下矿石
         return true; // yes we need to be near a supply pile so we can drop off the ore
     }
 

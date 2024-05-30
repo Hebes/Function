@@ -133,8 +133,8 @@ public abstract class GoapAction : MonoBehaviour
     /// <summary>
     /// 添加先决条件
     /// </summary>
-    /// <param name="key"></param>
-    /// <param name="value"></param>
+    /// <param name="key">先决条件的名称</param>
+    /// <param name="value">先决条件的bool</param>
     public void addPrecondition(string key, object value)
     {
         preconditions.Add(new KeyValuePair<string, object>(key, value));
@@ -144,7 +144,7 @@ public abstract class GoapAction : MonoBehaviour
     /// 删除先决条件
     /// </summary>
     /// <param name="key"></param>
-    public void removePrecondition(string key)
+    public void RemovePrecondition(string key)
     {
         KeyValuePair<string, object> remove = default(KeyValuePair<string, object>);
         foreach (KeyValuePair<string, object> kvp in preconditions)

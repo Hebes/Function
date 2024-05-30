@@ -26,9 +26,9 @@ public class ChopTreeAction : GoapAction
 	public float workDuration = 2; // seconds
 	
 	public ChopTreeAction () {
-		addPrecondition ("hasTool", true); // we need a tool to do this
-		addPrecondition ("hasLogs", false); // if we have logs we don't want more
-		addEffect ("hasLogs", true);
+		addPrecondition ("hasTool", true); // we need a tool to do this 我们需要一个工具来做到这一点
+		addPrecondition ("hasLogs", false); // if we have logs we don't want more 如果我们有原木，我们不想要更多
+		addEffect ("hasLogs", true);//影响-> 获取原木
 	}
 	
 	
