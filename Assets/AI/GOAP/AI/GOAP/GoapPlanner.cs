@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
+ * Goap规划计划什么行动可以完成，以实现目标状态。
  * Plans what actions can be completed in order to fulfill a goal state.
- * 计划什么行动可以完成，以实现目标状态。
- * Goap规划
  */
 public class GoapPlanner
 {
@@ -60,27 +59,24 @@ public class GoapPlanner
             }
         }
 
-        // get its node and work back through the parents
+        // get its node and work back through the parents 获取它的节点并通过父节点返回
         List<GoapAction> result = new List<GoapAction>();
         Node n = cheapest;
         while (n != null)
         {
             if (n.action != null)
             {
-                result.Insert(0, n.action); // insert the action in the front
+                result.Insert(0, n.action); // insert the action in the front 在前面插入动作
             }
 
             n = n.parent;
         }
-        // we now have this action list in correct order
-
+        // we now have this action list in correct order 我们现在有了正确的操作列表
         Queue<GoapAction> queue = new Queue<GoapAction>();
         foreach (GoapAction a in result)
-        {
             queue.Enqueue(a);
-        }
 
-        // hooray we have a plan!
+        // hooray we have a plan! 万岁，我们有计划了!
         return queue;
     }
 
@@ -95,7 +91,7 @@ public class GoapPlanner
      * 序列。
      */
     private bool buildGraph(Node parent,            //节点的父节点
-        List<Node> leaves,                          //所有节点的储存list
+        ICollection<Node> leaves,                          //所有节点的储存list
         HashSet<GoapAction> usableActions,          //可以运行的行动
         HashSet<KeyValuePair<string, object>> goal)//自己的目标
     {
@@ -135,8 +131,8 @@ public class GoapPlanner
     }
 
     /**
-     * Create a subset of the actions excluding the removeMe one. Creates a new set.
      * 创建除removeMe操作之外的操作子集。创建一个新的集合。
+     * Create a subset of the actions excluding the removeMe one. Creates a new set.
      */
     private HashSet<GoapAction> actionSubset(HashSet<GoapAction> actions, GoapAction removeMe)
     {
@@ -151,12 +147,9 @@ public class GoapPlanner
     }
 
     /**
+     * 检查执行行动的条件(实例GoapAction)和自己所拥有的东西(Labourer的getWorldState)是否想匹配(只要一个不匹配，这个行动就不能指定)
      * Check that all items in 'test' are in 'state'. If just one does not match or is not there
      * then this returns false.
-     * 检查` test `中的所有项都处于` state `状态。如果只有一个不匹配或不存在
-     * 然后返回false。
-     *
-     * 检查执行行动的条件(实例GoapAction)和自己所拥有的东西(Labourer的getWorldState)是否想匹配(只要一个不匹配，这个行动就不能指定)
      */
     private bool inState(HashSet<KeyValuePair<string, object>> test, HashSet<KeyValuePair<string, object>> state)
     {
@@ -181,8 +174,8 @@ public class GoapPlanner
     }
 
     /**
-     * Apply the stateChange to the currentState 将stateChange应用到currentState
      * 将stateChange应用到currentState将stateChange应用到currentState
+     * Apply the stateChange to the currentState 将stateChange应用到currentState
      */
     private HashSet<KeyValuePair<string, object>> populateState(HashSet<KeyValuePair<string, object>> currentState, HashSet<KeyValuePair<string, object>> stateChange)
     {
@@ -224,8 +217,8 @@ public class GoapPlanner
     }
 
     /**
-     * Used for building up the graph and holding the running costs of actions.
      * 用于构建图形并保存操作的运行成本。
+     * Used for building up the graph and holding the running costs of actions.
      */
     private class Node
     {

@@ -84,7 +84,7 @@ public abstract class GoapAction : MonoBehaviour
     public abstract bool isDone();
 
     /// <summary>
-    /// 前提条件
+    /// 前提条件(检查行动是否可以执行)
     /// </summary>
     /// <param name="agent"></param>
     /// <returns></returns>
@@ -158,7 +158,7 @@ public abstract class GoapAction : MonoBehaviour
     }
 
     /// <summary>
-    /// 添加影响
+    /// 添加对于自身的影响
     /// </summary>
     /// <param name="key"></param>
     /// <param name="value"></param>
