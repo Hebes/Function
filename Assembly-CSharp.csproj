@@ -121,8 +121,8 @@
      <Compile Include="Assets\AI\GOAP\GameData\ForgeComponent.cs" />
      <Compile Include="Assets\流程\Procedure\Singleton\MonoSingleton.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\Labourer.cs" />
-     <Compile Include="Assets\多语言\LanguageComponent.cs" />
      <Compile Include="Assets\相机截图功能\ScreenCaptureEditor.cs" />
+     <Compile Include="Assets\多语言\LanguageComponent.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\ForgeToolAction.cs" />
      <Compile Include="Assets\UnityEditor修改分辨率\Test.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\IEntityData.cs" />
@@ -235,7 +235,6 @@
      <None Include="Assets\SLG游戏画行军线\Resources\DrawLine\lineShader.shader" />
      <Folder Include="Assets\流程\Procedure" />
      <Folder Include="Assets\10万物品显示\SV" />
-     <Folder Include="Assets\反射\反射字符串创建Action" />
      <None Include="Assets\编辑器运行时固定启动场景\1.txt" />
      <Folder Include="Assets\宏控制面板" />
      <Folder Include="Assets\函数曲线" />
