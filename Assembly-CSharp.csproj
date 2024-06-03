@@ -144,6 +144,7 @@
      <Compile Include="Assets\UnityEditor修改分辨率\Test.cs" />
      <Compile Include="Assets\功能\血条跟随\Scripts\Player.cs" />
      <Compile Include="Assets\功能\侧边弹窗\Test.cs" />
+     <Compile Include="Assets\Shader\基础\Test.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\IEntityData.cs" />
      <Compile Include="Assets\API使用\反射\HelperReflection.cs" />
      <Compile Include="Assets\功能\SLG游戏画行军线\Resources\DrawLine\LineManager.cs" />
@@ -212,6 +213,7 @@
      <Folder Include="Assets\功能\日志\方法调用过程" />
      <Folder Include="Assets\功能\唯一ID" />
      <Folder Include="Assets\功能\运行时显示调试信息" />
+     <Folder Include="Assets\AI\GOAP\Scenes\GOAP" />
      <Folder Include="Assets\AI\GOAP\General Scripts" />
      <Folder Include="Assets\功能\为枚举提供自定义字符串" />
      <Folder Include="Assets\功能\多语言" />
@@ -244,6 +246,7 @@
      <Folder Include="Assets\功能\计算代码运行时间\1" />
      <Folder Include="Assets\AI\GOAP\Textures" />
      <Folder Include="Assets\功能\SLG游戏画行军线" />
+     <Folder Include="Assets\Shader\基础" />
      <Folder Include="Assets\面板拓展UI代码获取\1\CodeAutoGeneration" />
      <Folder Include="Assets\10万物品显示" />
      <Folder Include="Assets\数据结构\Collections" />
@@ -258,6 +261,7 @@
      <Folder Include="Assets\流程\Procedure\示例\Entity" />
      <Folder Include="Assets\AI\GOAP\AI\GOAP" />
      <Folder Include="Assets\编辑器拓展" />
+     <None Include="Assets\Test\Test.shader" />
      <Folder Include="Assets\功能\血条跟随\GUI\Prefabs" />
      <Folder Include="Assets\函数\判断物体左右叉积" />
      <Folder Include="Assets\流程\Procedure\示例\FSM" />
@@ -277,6 +281,7 @@
      <Folder Include="Assets\AI\GOAP\AI\FSM" />
      <Folder Include="Assets\功能\注解" />
      <Folder Include="Assets\碰撞检测\AABBCC" />
+     <Folder Include="Assets\Shader" />
      <Folder Include="Assets\面板拓展UI代码获取" />
      <Folder Include="Assets\功能\SLG游戏画行军线\Resources" />
      <Folder Include="Assets\功能\动态图集\1" />
@@ -292,6 +297,7 @@
      <Folder Include="Assets\AI\GOAP\Materials" />
      <Folder Include="Assets\编辑器拓展\编辑器快速查找项目里的中文字符串" />
      <Folder Include="Assets\功能\血条跟随\GUI" />
+     <None Include="Assets\Shader\基础\Test.shader" />
      <Folder Include="Assets\AI\GOAP\GameData" />
      <Folder Include="Assets\功能\String优化" />
      <Folder Include="Assets\AI\FSM" />
