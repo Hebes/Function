@@ -4,6 +4,21 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
+
+/// <summary>
+/// 涓存椂鍙橀噺浣跨敤
+/// </summary>
+[AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+public class TempAttribute : Attribute
+{
+    
+
+    public TempAttribute()
+    {
+        
+    }
+}
+
 class EntityObject : Attribute {
     public EntityObject(string name) { 
     }
@@ -19,8 +34,8 @@ class NewEntityObject : Attribute
     }
 }
 
-// 注解 + 装饰器;
-// 注解：給一个类型做一些注释对象，到时候我们可以读取得到;
+// 注锟斤拷 + 装锟斤拷锟斤拷;
+// 注锟解：锟給一锟斤拷锟斤拷锟斤拷锟斤拷一些注锟酵讹拷锟襟，碉拷时锟斤拷锟斤拷锟角匡拷锟皆讹拷取锟矫碉拷;
 [EntityObject("GameEntiyObject")]
 public class GameEntiyObject { 
 }
@@ -40,12 +55,12 @@ public class GameMgr : MonoBehaviour
 {
     void Start()
     {
-        Type t = typeof(GameMgr); // 类型实例
+        Type t = typeof(GameMgr); // 锟斤拷锟斤拷实锟斤拷
 
-        // 调用系统API全域类扫描你所有得类;
+        // 锟斤拷锟斤拷系统API全锟斤拷锟斤拷扫锟斤拷锟斤拷锟斤拷锟叫碉拷锟斤拷;
         Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
         foreach (Assembly assembly in assemblies) {
-            Type[] types = assembly.GetTypes(); // 扫描你所有得当前程序集类型
+            Type[] types = assembly.GetTypes(); // 扫锟斤拷锟斤拷锟斤拷锟叫得碉拷前锟斤拷锟斤拷锟斤拷锟斤拷
             for (int i = 0; i < types.Length; i++) {
                 NewEntityObject obj = types[i].GetCustomAttribute<NewEntityObject>();
                 if (obj != null) {
