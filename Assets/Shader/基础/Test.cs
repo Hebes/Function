@@ -5,6 +5,6 @@
     /// </summary>
     public class Test
     {
-        
+        private void Test1(){}
     }
 }
