@@ -2,6 +2,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// 锻刀动作
+/// </summary>
 public class ForgeToolAction : GoapAction
 {
 	private bool forged = false;
@@ -11,8 +14,8 @@ public class ForgeToolAction : GoapAction
 	public float forgeDuration = 2; // seconds
 	
 	public ForgeToolAction () {
-		addPrecondition ("hasOre", true);
-		addEffect ("hasNewTools", true);
+		addPrecondition ("hasOre", true);//先决条件->需要矿石
+		addEffect ("hasNewTools", true);//影响->拥有新工具
 	}
 	
 	

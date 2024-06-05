@@ -153,5 +153,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numTools: 2
   numLogs: 2
-  numFirewood: 0
+  numFirewood: 2
   numOre: 2

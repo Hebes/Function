@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 323228429}
   - component: {fileID: 323228436}
   m_Layer: 0
-  m_Name: Blacksmith
+  m_Name: "Blacksmith->\u94C1\u5320"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 493275373}
   - component: {fileID: 493275381}
   m_Layer: 0
-  m_Name: WoodCutter
+  m_Name: "WoodCutter->\u4F10\u6728\u5DE5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,6 +485,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: 207197a23674f1a4787542dfa55de77c, type: 3}
+      propertyPath: m_Name
+      value: "Forge->\u953B\u9020\u70B9"
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 207197a23674f1a4787542dfa55de77c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.94076252
@@ -632,9 +636,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: m_Name
+      value: "SupplyPile->\u8D44\u6E90\u5B58\u653E\u70B9"
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.64726329
+      value: -2.6472633
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -642,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.05886745
+      value: -9.058867
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -660,6 +668,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -673,6 +693,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100002, guid: 4b1301bfd3fb4d647afecae4877fb3ee, type: 3}
+      propertyPath: m_Name
+      value: "Tree->\u6811"
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4b1301bfd3fb4d647afecae4877fb3ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.1164217
@@ -722,7 +746,7 @@ GameObject:
   - component: {fileID: 1125186929}
   - component: {fileID: 1125186937}
   m_Layer: 0
-  m_Name: Logger
+  m_Name: "Logger->\u6A35\u592B"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -838,9 +862,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100000, guid: c36cb81095e563646b668259e0dedaff, type: 3}
+      propertyPath: m_Name
+      value: "Rock->\u5CA9\u77F3"
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c36cb81095e563646b668259e0dedaff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.26231003
+      value: -6.26231
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c36cb81095e563646b668259e0dedaff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -848,7 +876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c36cb81095e563646b668259e0dedaff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.50535154
+      value: -6.5053515
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c36cb81095e563646b668259e0dedaff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -988,7 +1016,7 @@ GameObject:
   - component: {fileID: 1584392515}
   - component: {fileID: 1584392518}
   m_Layer: 0
-  m_Name: Miner
+  m_Name: "Miner->\u77FF\u5DE5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1210,9 +1238,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: m_Name
+      value: "SupplyPile->\u8D44\u6E90\u5B58\u653E\u70B9"
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.53443277
+      value: 1.5344328
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1220,7 +1252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.99804783
+      value: -7.998048
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1238,6 +1270,18 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: numOre
       value: 0
@@ -1248,6 +1292,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
       propertyPath: numTools
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 89d4a2347bc39ff4aafa9398ae9049a2, type: 3}
+      propertyPath: numFirewood
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1263,6 +1311,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100002, guid: 44c444b7f970e294e92c8b689b736666, type: 3}
+      propertyPath: m_Name
+      value: "ChoppingBlock->\u6728\u6869"
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 44c444b7f970e294e92c8b689b736666, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.01800561
@@ -1406,14 +1458,14 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1278069939}
   - {fileID: 1812045636}
+  - {fileID: 828148479}
   - {fileID: 323228435}
   - {fileID: 493275380}
-  - {fileID: 556406193}
-  - {fileID: 828148479}
-  - {fileID: 867392980}
-  - {fileID: 1175868390}
-  - {fileID: 1125186936}
-  - {fileID: 1278069939}
-  - {fileID: 1969020086}
   - {fileID: 1584392514}
+  - {fileID: 1125186936}
+  - {fileID: 1175868390}
+  - {fileID: 556406193}
+  - {fileID: 867392980}
+  - {fileID: 1969020086}
