@@ -45,7 +45,7 @@ namespace Assets.多语言
         {
             LanguageType = languageType;
             foreach (var languageComponent in LanguageComponentList)
-                languageComponent.Change();
+                languageComponent.ChangeImage();
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Assets.多语言
         public void ChangeLanguage(LanguageComponent languageComponent,string keyValue)
         {
             languageComponent.key = keyValue;
-            languageComponent.Change();
+            languageComponent.ChangeImage();
         }
 
         /// <summary>

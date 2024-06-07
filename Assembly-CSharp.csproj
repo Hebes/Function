@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\UnityEditor修改分辨率\GameViewUtils.cs" />
      <Compile Include="Assets\碰撞检测\分离轴定理\Sat.cs" />
+     <Compile Include="Assets\功能\动态图片\ImageManager.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\Entity.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureFsm.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpToolAction.cs" />
@@ -79,6 +80,7 @@
      <Compile Include="Assets\功能\为枚举提供自定义字符串\Test.cs" />
      <Compile Include="Assets\功能\注解\GameMgr.cs" />
      <Compile Include="Assets\Singleton.cs" />
+     <Compile Include="Assets\功能\动态图片\ImageComponent.cs" />
      <Compile Include="Assets\AI\FSM\FSMState.cs" />
      <Compile Include="Assets\功能\SLG游戏画行军线\Test.cs" />
      <Compile Include="Assets\功能\查找网格重建的具体UI元素\NewBehaviourScript.cs" />
@@ -267,6 +269,7 @@
      <Folder Include="Assets\功能\血条跟随\GUI\Prefabs" />
      <Folder Include="Assets\函数\判断物体左右叉积" />
      <Folder Include="Assets\流程\Procedure\示例\FSM" />
+     <Folder Include="Assets\功能\动态图片" />
      <Folder Include="Assets\功能\虚拟摇杆\摇杆资源\Script" />
      <Folder Include="Assets\函数" />
      <Folder Include="Assets\Test" />
