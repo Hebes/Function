@@ -172,6 +172,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffOreAction.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\ForgeComponent.cs" />
      <Compile Include="Assets\流程\Procedure\IGameModule.cs" />
+     <Compile Include="Assets\功能\控制脚本执行顺序\Test.cs" />
      <Compile Include="Assets\功能\侧边弹窗\Message.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureBase.cs" />
      <Compile Include="Assets\函数\函数曲线\动画曲线AnimationCurve\NewBehaviourScript.cs" />
@@ -252,6 +253,7 @@
      <Folder Include="Assets\数据结构\Collections" />
      <Folder Include="Assets\功能\计算代码运行时间" />
      <Folder Include="Assets\编辑器拓展\功能详解" />
+     <Folder Include="Assets\功能\控制脚本执行顺序" />
      <Folder Include="Assets\功能\血条跟随\Models" />
      <Folder Include="Assets\AI\GOAP\GameData\Labourers\职业" />
      <Folder Include="Assets\功能\虚拟摇杆" />

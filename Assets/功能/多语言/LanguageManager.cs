@@ -10,7 +10,7 @@ namespace Assets.多语言
     /// <summary>
     /// 语言类型
     /// </summary>
-    public enum ELanguageMode
+    public enum ELanguageType
     {
         Chinese = 0,
         English = 1,
@@ -23,17 +23,12 @@ namespace Assets.多语言
         public string english;
     }
 
-    public interface ILanguage
-    {
-        
-    }
-
     public class LanguageManager
     {
         public static LanguageManager Instance { get; private set; }
         private Dictionary<string, LanguageData> LanguageDataDic { get; set; }
         private List<LanguageComponent> LanguageComponentList { get; set; }
-        public ELanguageMode LanguageMode { get; set; } = ELanguageMode.Chinese;
+        public ELanguageType LanguageType { get; set; } = ELanguageType.Chinese;
         public Font Font { get; set; }
 
         public void Init()
@@ -46,11 +41,20 @@ namespace Assets.多语言
         /// <summary>
         /// 切换语言
         /// </summary>
-        public void OnChangeLanguage(ELanguageMode languageMode)
+        public void ChangeLanguageType(ELanguageType languageType)
         {
-            LanguageMode = languageMode;
+            LanguageType = languageType;
             foreach (var languageComponent in LanguageComponentList)
                 languageComponent.Change();
+        }
+
+        /// <summary>
+        /// 切换语言
+        /// </summary>
+        public void ChangeLanguage(LanguageComponent languageComponent,string keyValue)
+        {
+            languageComponent.key = keyValue;
+            languageComponent.Change();
         }
 
         /// <summary>
@@ -69,13 +73,11 @@ namespace Assets.多语言
         {
             if (LanguageDataDic.TryGetValue(key, out var value))
             {
-                switch (LanguageMode)
+                switch (LanguageType)
                 {
                     default:
-                    case ELanguageMode.Chinese:
-                        return value.chinese;
-                    case ELanguageMode.English:
-                        return value.english;
+                    case ELanguageType.Chinese: return value.chinese;
+                    case ELanguageType.English: return value.english;
                 }
             }
 
@@ -102,14 +104,22 @@ namespace Assets.多语言
                 Debug.LogError($"当前内存已有{languageComponent.key}组件");
                 return;
             }
+
             LanguageComponentList.Add(languageComponent);
         }
     }
 
-    
+    public static class ExtensionLanguage
+    {
+        public static void ExtLanguage(this LanguageComponent languageComponent,string keyValue)
+        {
+            LanguageManager.Instance.ChangeLanguage(languageComponent, keyValue);
+        }
+    }
+
     //CustomEditor(typeof()) 用于关联要自定义的脚本
     //CanEditMultipleObjects 支持多物体同时编辑
-    [CustomEditor(typeof(LanguageComponent), true),CanEditMultipleObjects]
+    [CustomEditor(typeof(LanguageComponent), true), CanEditMultipleObjects]
     public class LanguageEditor : Editor
     {
         private LanguageComponent languageText;
@@ -124,9 +134,9 @@ namespace Assets.多语言
         public override void OnInspectorGUI()
         {
             base.DrawDefaultInspector();
-            if (Application.isPlaying)return;
+            if (Application.isPlaying) return;
             GUILayout.Label("Key", EditorStyles.boldLabel);
-            languageText.key = EditorGUILayout.TextArea(languageText.text.text,GUILayout.Height(40));
+            languageText.key = EditorGUILayout.TextArea(languageText.text.text, GUILayout.Height(40));
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Assets.多语言
         {
             languageManager = LanguageManager.Instance;
             languageManager.AddLanguageComponent(this);
+            Change();
         }
         public void Change() => text.text = languageManager.Get(key);
 
