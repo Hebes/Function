@@ -18,9 +18,12 @@ namespace Assets.多语言
         {
             languageManager = LanguageManager.Instance;
             languageManager.AddLanguageComponent(this);
+            ChangeImage();
+            //ChangeFont();
         }
-        public void Change() => text.text = languageManager.Get(key);
+        public void ChangeImage() => text.text = languageManager.Get(key);
+        public void ChangeFont()=> text.font = languageManager.Font;
 
-        private void OnMouseOver() => text.text = key;
+        //private void OnMouseOver() => text.text = key;
     }
 }

@@ -26,7 +26,7 @@ public abstract class Labourer : MonoBehaviour, IGoap
 
     void Start()
     {
-        backpack ??= gameObject.AddComponent<BackpackComponent>();
+        backpack ??= gameObject.AddComponent<BackpackComponent>();//获取自身的世界状态
         if (backpack.tool != null) return;
         var prefab = Resources.Load<GameObject>(backpack.toolType);
         var tool = Instantiate(prefab, transform.position, transform.rotation);

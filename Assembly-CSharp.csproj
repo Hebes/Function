@@ -45,8 +45,11 @@
     <Analyzer Include="D:\Unity\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\API使用\Assembly类.cs" />
+     <Compile Include="Assets\API使用\Type类.cs" />
      <Compile Include="Assets\UnityEditor修改分辨率\GameViewUtils.cs" />
      <Compile Include="Assets\碰撞检测\分离轴定理\Sat.cs" />
+     <Compile Include="Assets\功能\动态图片\ImageManager.cs" />
      <Compile Include="Assets\流程\Procedure\示例\Entity\Entity.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureFsm.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpToolAction.cs" />
@@ -79,6 +82,7 @@
      <Compile Include="Assets\功能\为枚举提供自定义字符串\Test.cs" />
      <Compile Include="Assets\功能\注解\GameMgr.cs" />
      <Compile Include="Assets\Singleton.cs" />
+     <Compile Include="Assets\功能\动态图片\ImageComponent.cs" />
      <Compile Include="Assets\AI\FSM\FSMState.cs" />
      <Compile Include="Assets\功能\SLG游戏画行军线\Test.cs" />
      <Compile Include="Assets\功能\查找网格重建的具体UI元素\NewBehaviourScript.cs" />
@@ -172,6 +176,7 @@
      <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffOreAction.cs" />
      <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\ForgeComponent.cs" />
      <Compile Include="Assets\流程\Procedure\IGameModule.cs" />
+     <Compile Include="Assets\功能\控制脚本执行顺序\Test.cs" />
      <Compile Include="Assets\功能\侧边弹窗\Message.cs" />
      <Compile Include="Assets\流程\Procedure\ProcedureBase.cs" />
      <Compile Include="Assets\函数\函数曲线\动画曲线AnimationCurve\NewBehaviourScript.cs" />
@@ -205,7 +210,6 @@
      <Folder Include="Assets\Image自定义顶点数据实现圆角矩形" />
      <Folder Include="Assets\Excel插件编译" />
      <Folder Include="Assets\功能\动态图集\1\Scripts" />
-     <Folder Include="Assets\API使用" />
      <Folder Include="Assets\功能\血条跟随\GUI\GameUI" />
      <Folder Include="Assets\API使用\字符串优化" />
      <Folder Include="Assets\函数\函数曲线\动画曲线AnimationCurve" />
@@ -252,6 +256,7 @@
      <Folder Include="Assets\数据结构\Collections" />
      <Folder Include="Assets\功能\计算代码运行时间" />
      <Folder Include="Assets\编辑器拓展\功能详解" />
+     <Folder Include="Assets\功能\控制脚本执行顺序" />
      <Folder Include="Assets\功能\血条跟随\Models" />
      <Folder Include="Assets\AI\GOAP\GameData\Labourers\职业" />
      <Folder Include="Assets\功能\虚拟摇杆" />
@@ -265,6 +270,7 @@
      <Folder Include="Assets\功能\血条跟随\GUI\Prefabs" />
      <Folder Include="Assets\函数\判断物体左右叉积" />
      <Folder Include="Assets\流程\Procedure\示例\FSM" />
+     <Folder Include="Assets\功能\动态图片" />
      <Folder Include="Assets\功能\虚拟摇杆\摇杆资源\Script" />
      <Folder Include="Assets\函数" />
      <Folder Include="Assets\Test" />

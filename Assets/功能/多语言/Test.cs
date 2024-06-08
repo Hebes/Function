@@ -12,6 +12,7 @@ namespace Assets.多语言
         {
             var languageManager = new LanguageManager();
             languageManager.Init();
+            languageManager.ChangeLanguageType(ELanguageType.English);
 
             var languageData1 = new LanguageData
             {
@@ -24,14 +25,14 @@ namespace Assets.多语言
             toggle2.onValueChanged.AddListener((bool isOn) =>
             {
                 if (!isOn) return;
-                languageManager.OnChangeLanguage(ELanguageMode.English);
+                languageManager.ChangeLanguageType(ELanguageType.English);
             });
         }
         
         private void Ontoggle1(bool isOn)
         {
             if (!isOn) return;
-            LanguageManager.Instance.OnChangeLanguage(ELanguageMode.Chinese);
+            LanguageManager.Instance.ChangeLanguageType(ELanguageType.Chinese);
         }
     }
 }

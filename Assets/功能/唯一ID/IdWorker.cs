@@ -32,7 +32,7 @@ public class IdWorker
 
     #region 单例:完全懒汉
     private static readonly Lazy<IdWorker> lazy = new Lazy<IdWorker>(() => new IdWorker());
-    public static IdWorker Singleton { get { return lazy.Value; } }
+    public static IdWorker Singleton => lazy.Value;
     private IdWorker() { }
     #endregion
 
@@ -78,9 +78,7 @@ public class IdWorker
     {
         long mill = getNewstmp();
         while (mill <= lastStmp)
-        {
             mill = getNewstmp();
-        }
         return mill;
     }
 
