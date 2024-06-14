@@ -358,6 +358,15 @@
      <Reference Include="EPPlus">
      <HintPath>C:\Users\Admin\Desktop\project\Function\Assets\Excel工具\Plugins\EPPlus.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Analytics.Tracker">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Tracker.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.StandardEvents">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.analytics@3.8.1\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Analytics.Editor">
+     <HintPath>C:\Users\Admin\Desktop\project\Function\Library\PackageCache\com.unity.analytics@3.8.1\Unity.Analytics.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\Unity\UnityEditor\2022.3.7f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
      </Reference>
