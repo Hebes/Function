@@ -16,7 +16,7 @@ public class Blacksmith : Labourer
 	public override HashSet<KeyValuePair<string,object>> createGoalState () {
 		HashSet<KeyValuePair<string,object>> goal = new HashSet<KeyValuePair<string,object>> ();
 		
-		goal.Add(new KeyValuePair<string, object>("collectTools", true ));//制造工具
+		goal.Add(new KeyValuePair<string, object>("collectTools", true ));//制造工具 
 		return goal;
 	}
 }
