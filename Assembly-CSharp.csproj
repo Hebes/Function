@@ -124,6 +124,7 @@
     <Compile Include="Assets\流程\Procedure\GameModuleBase.cs" />
     <Compile Include="Assets\10万物品显示\SV\BagItem.cs" />
     <Compile Include="Assets\编辑器拓展\编辑器快速查找项目里的中文字符串\Test.cs" />
+    <Compile Include="Assets\API使用\Type类.cs" />
     <Compile Include="Assets\功能\动态图集\1\Scripts\DynamicAtlasManager.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopFirewoodAction.cs" />
     <Compile Include="Assets\碰撞检测\2D\Test.cs" />
@@ -175,6 +176,7 @@
     <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffOreAction.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\ForgeComponent.cs" />
     <Compile Include="Assets\流程\Procedure\IGameModule.cs" />
+    <Compile Include="Assets\API使用\Assembly类.cs" />
     <Compile Include="Assets\功能\控制脚本执行顺序\Test.cs" />
     <Compile Include="Assets\功能\侧边弹窗\Message.cs" />
     <Compile Include="Assets\流程\Procedure\ProcedureBase.cs" />
@@ -881,11 +883,17 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
       <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
@@ -895,12 +903,6 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>C:\Users\Admin\Desktop\project\Function\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
