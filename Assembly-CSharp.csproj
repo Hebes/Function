@@ -46,70 +46,38 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\UnityEditor修改分辨率\GameViewUtils.cs" />
-    <Compile Include="Assets\碰撞检测\分离轴定理\Sat.cs" />
-    <Compile Include="Assets\功能\动态图片\ImageManager.cs" />
     <Compile Include="Assets\流程\Procedure\示例\Entity\Entity.cs" />
-    <Compile Include="Assets\流程\Procedure\ProcedureFsm.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpToolAction.cs" />
     <Compile Include="Assets\函数\函数曲线\动画曲线AnimationCurve\UKeyframe.cs" />
-    <Compile Include="Assets\AI\FSM\IFsm.cs" />
-    <Compile Include="Assets\AI\FSM\Fsm.cs" />
-    <Compile Include="Assets\功能\反射内存实力类查看数据\Test1.cs" />
-    <Compile Include="Assets\功能\唯一ID\IdWorker.cs" />
-    <Compile Include="Assets\Test\NttttewBehaviourScript.cs" />
-    <Compile Include="Assets\面板拓展UI代码获取\1\CodeAutoGeneration\CodeConfig.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffToolsAction.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\TreeComponent.cs" />
-    <Compile Include="Assets\功能\日志\远程日志\RemoteLog.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Labourers\职业\Blacksmith.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\BackpackComponent.cs" />
     <Compile Include="Assets\数据结构\数据结构七大查找算法\LookupAlgorithm.cs" />
-    <Compile Include="Assets\流程\Procedure\GameEntry.cs" />
-    <Compile Include="Assets\AI\GOAP\AI\FSM\FSMState.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\MovableComponent.cs" />
     <Compile Include="Assets\功能\调色\ColorRGB.cs" />
     <Compile Include="Assets\功能\二分查找\1\Test.cs" />
-    <Compile Include="Assets\流程\Procedure\Game.cs" />
     <Compile Include="Assets\功能\日志\方法调用过程\Test.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\ChoppingBlockComponent.cs" />
-    <Compile Include="Assets\功能\血条跟随\Scripts\UIBlood.cs" />
     <Compile Include="Assets\功能\相机截图功能\ScreenCaptureEditor.cs" />
     <Compile Include="Assets\功能\宏控制面板\Macro.cs" />
     <Compile Include="Assets\碰撞检测\AABBCC\EdgerEditor.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\IronRockComponent.cs" />
-    <Compile Include="Assets\功能\为枚举提供自定义字符串\Test.cs" />
-    <Compile Include="Assets\功能\注解\GameMgr.cs" />
     <Compile Include="Assets\Singleton.cs" />
-    <Compile Include="Assets\功能\动态图片\ImageComponent.cs" />
-    <Compile Include="Assets\AI\FSM\FSMState.cs" />
-    <Compile Include="Assets\功能\SLG游戏画行军线\Test.cs" />
-    <Compile Include="Assets\功能\查找网格重建的具体UI元素\NewBehaviourScript.cs" />
-    <Compile Include="Assets\编辑器拓展\查找图片引用\SearchRefrenceEditorWindow.cs" />
     <Compile Include="Assets\功能\调色\ColorCircle.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Labourers\职业\Logger.cs" />
     <Compile Include="Assets\数据结构\Collections\IGraph.cs" />
-    <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.EntityContainer.cs" />
     <Compile Include="Assets\AI\GOAP\AI\GOAP\IGoap.cs" />
     <Compile Include="Assets\AI\GOAP\General Scripts\ActivateTrigger.cs" />
     <Compile Include="Assets\功能\血条跟随\Scripts\FightMgr.cs" />
-    <Compile Include="Assets\数据结构\Collections\Tree.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffFirewoodAction.cs" />
     <Compile Include="Assets\功能\运行时显示调试信息\RenderingProfiler.cs" />
     <Compile Include="Assets\API使用\字符串优化\StringEx.cs" />
-    <Compile Include="Assets\流程\Procedure\DependenceModuleAttribute.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpLogsAction.cs" />
     <Compile Include="Assets\功能\反射内存实力类查看数据\ReflectiveMemory.cs" />
-    <Compile Include="Assets\API使用\IO\Utility.IO.cs" />
     <Compile Include="Assets\碰撞检测\AABBCC\AABBCC.cs" />
     <Compile Include="Assets\功能\String优化\StringEx.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpOreAction.cs" />
-    <Compile Include="Assets\流程\Procedure\示例\FSM\FsmManager.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Labourers\职业\Miner.cs" />
-    <Compile Include="Assets\功能\SLG游戏画行军线\Resources\DrawLine\SetPropies.cs" />
     <Compile Include="Assets\AI\GOAP\AI\FSM\FSM.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopTreeAction.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffLogsAction.cs" />
-    <Compile Include="Assets\Excel插件编译\ExcelCompile.cs" />
     <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapAction.cs" />
     <Compile Include="Assets\功能\编辑器多开工具\Test.cs" />
     <Compile Include="Assets\功能\图文混排\Test.cs" />
@@ -117,72 +85,35 @@
     <Compile Include="Assets\功能\血条跟随\Scripts\joystick.cs" />
     <Compile Include="Assets\功能\血条跟随\Scripts\GameUICtrl.cs" />
     <Compile Include="Assets\功能\相机截图功能\ScreenCapture.cs" />
-    <Compile Include="Assets\功能\计算代码运行时间\1\Utility.Time.cs" />
-    <Compile Include="Assets\功能\反射内存实力类查看数据\Test2.cs" />
-    <Compile Include="Assets\函数\判断物体前后点积\Dot1.cs" />
-    <Compile Include="Assets\API使用\旋转\Rotation.cs" />
-    <Compile Include="Assets\流程\Procedure\GameModuleBase.cs" />
-    <Compile Include="Assets\10万物品显示\SV\BagItem.cs" />
     <Compile Include="Assets\编辑器拓展\编辑器快速查找项目里的中文字符串\Test.cs" />
-    <Compile Include="Assets\API使用\Type类.cs" />
-    <Compile Include="Assets\功能\动态图集\1\Scripts\DynamicAtlasManager.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\ChopFirewoodAction.cs" />
     <Compile Include="Assets\碰撞检测\2D\Test.cs" />
     <Compile Include="Assets\API使用\反射\Reflection.cs" />
-    <Compile Include="Assets\碰撞检测\AABBCC\Edger.cs" />
-    <Compile Include="Assets\功能\调色\ColorManager.cs" />
     <Compile Include="Assets\功能\相机截图功能\Camrea.cs" />
-    <Compile Include="Assets\API使用\DateTime\DateTimeMono.cs" />
-    <Compile Include="Assets\流程\Procedure\示例\UIHelper.cs" />
     <Compile Include="Assets\功能\虚拟摇杆\摇杆资源\Script\CubeMove.cs" />
-    <Compile Include="Assets\Shader\信号干扰Shader\testnoise.cs" />
-    <Compile Include="Assets\数据结构\Collections\List.cs" />
     <Compile Include="Assets\API使用\DateTime\DateTimeTest.cs" />
     <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapPlanner.cs" />
-    <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.cs" />
     <Compile Include="Assets\流程\Procedure\Singleton\MonoSingleton.cs" />
-    <Compile Include="Assets\API使用\序列化\Serialize\BinaryReader.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Labourers\Labourer.cs" />
     <Compile Include="Assets\功能\调色\ColorPanel.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\ForgeToolAction.cs" />
     <Compile Include="Assets\函数\判断物体左右叉积\Cross1.cs" />
     <Compile Include="Assets\UnityEditor修改分辨率\Test.cs" />
-    <Compile Include="Assets\功能\血条跟随\Scripts\Player.cs" />
-    <Compile Include="Assets\功能\侧边弹窗\Test.cs" />
-    <Compile Include="Assets\Shader\基础\Test.cs" />
-    <Compile Include="Assets\流程\Procedure\示例\Entity\IEntityData.cs" />
-    <Compile Include="Assets\API使用\反射\HelperReflection.cs" />
-    <Compile Include="Assets\功能\SLG游戏画行军线\Resources\DrawLine\LineManager.cs" />
-    <Compile Include="Assets\数据结构\常见数据结构比较\DataStructure.cs" />
     <Compile Include="Assets\数据结构\Collections\GraphDir.cs" />
     <Compile Include="Assets\流程\Procedure\示例\FSM\MouseFsm\MouseState.cs" />
     <Compile Include="Assets\功能\动态图集\1\Scripts\DynamicAtlasTest.cs" />
-    <Compile Include="Assets\数据结构\Collections\Graph.cs" />
     <Compile Include="Assets\功能\唯一ID\Test.cs" />
     <Compile Include="Assets\10万物品显示\SV\BagPanel.cs" />
-    <Compile Include="Assets\流程\Procedure\示例\FSM\MouseFsm\MouseFsm.cs" />
     <Compile Include="Assets\热重载\CompileDLLHelper.cs" />
     <Compile Include="Assets\功能\日志\方法调用过程\ShowStack.cs" />
-    <Compile Include="Assets\面板拓展UI代码获取\1\CodeAutoGeneration\GenerateCodeWindow.cs" />
     <Compile Include="Assets\功能\动态图集\1\Scripts\DynamicAtlasSprite.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Actions\MineOreAction.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Labourers\职业\WoodCutter.cs" />
     <Compile Include="Assets\功能\侧边弹窗\MessageManager1.cs" />
-    <Compile Include="Assets\10万物品显示\SV\CustomSV.cs" />
-    <Compile Include="Assets\功能\动态图集\Test.cs" />
     <Compile Include="Assets\功能\虚拟摇杆\摇杆资源\Script\JpyStickPanel.cs" />
-    <Compile Include="Assets\碰撞检测\AABBCC\IMathAABB.cs" />
-    <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.EntityInfo.cs" />
     <Compile Include="Assets\功能\自制的消息提示框\Scripts\MessageBox.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffOreAction.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\ForgeComponent.cs" />
     <Compile Include="Assets\流程\Procedure\IGameModule.cs" />
-    <Compile Include="Assets\API使用\Assembly类.cs" />
     <Compile Include="Assets\功能\控制脚本执行顺序\Test.cs" />
     <Compile Include="Assets\功能\侧边弹窗\Message.cs" />
-    <Compile Include="Assets\流程\Procedure\ProcedureBase.cs" />
     <Compile Include="Assets\函数\函数曲线\动画曲线AnimationCurve\NewBehaviourScript.cs" />
-    <Compile Include="Assets\功能\柏林噪声\实现随机变形\ShapeOnGUI.cs" />
     <Compile Include="Assets\功能\多语言\LanguageManager.cs" />
     <Compile Include="Assets\Test\TestGC.cs" />
     <Compile Include="Assets\功能\宏控制面板\MacroHelper.cs" />
@@ -190,14 +121,83 @@
     <Compile Include="Assets\AI\GOAP\AI\GOAP\GoapAgent.cs" />
     <Compile Include="Assets\功能\多语言\Test.cs" />
     <Compile Include="Assets\流程\Procedure\示例\Entity\IEntity.cs" />
-    <Compile Include="Assets\功能\多语言\LanguageComponent.cs" />
     <Compile Include="Assets\其他\Other.cs" />
     <Compile Include="Assets\功能\为枚举提供自定义字符串\DescriptionAttribute.cs" />
-    <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\ToolComponent.cs" />
     <Compile Include="Assets\功能\String优化\Test.cs" />
     <Compile Include="Assets\API使用\文件夹操作\DirectoryOperation.cs" />
-    <Compile Include="Assets\API使用\序列化\Serialize\BinaryWriter.cs" />
     <Compile Include="Assets\数据结构\Collections\Extend.CSharp.cs" />
+    <Compile Include="Assets\碰撞检测\分离轴定理\Sat.cs" />
+    <Compile Include="Assets\功能\动态图片\ImageManager.cs" />
+    <Compile Include="Assets\流程\Procedure\ProcedureFsm.cs" />
+    <Compile Include="Assets\AI\FSM\IFsm.cs" />
+    <Compile Include="Assets\AI\FSM\Fsm.cs" />
+    <Compile Include="Assets\功能\反射内存实力类查看数据\Test1.cs" />
+    <Compile Include="Assets\功能\唯一ID\IdWorker.cs" />
+    <Compile Include="Assets\Test\NttttewBehaviourScript.cs" />
+    <Compile Include="Assets\面板拓展UI代码获取\1\CodeAutoGeneration\CodeConfig.cs" />
+    <Compile Include="Assets\功能\日志\远程日志\RemoteLog.cs" />
+    <Compile Include="Assets\流程\Procedure\GameEntry.cs" />
+    <Compile Include="Assets\AI\GOAP\AI\FSM\FSMState.cs" />
+    <Compile Include="Assets\流程\Procedure\Game.cs" />
+    <Compile Include="Assets\功能\血条跟随\Scripts\UIBlood.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\IronRockComponent.cs" />
+    <Compile Include="Assets\功能\为枚举提供自定义字符串\Test.cs" />
+    <Compile Include="Assets\功能\注解\GameMgr.cs" />
+    <Compile Include="Assets\功能\动态图片\ImageComponent.cs" />
+    <Compile Include="Assets\AI\FSM\FSMState.cs" />
+    <Compile Include="Assets\功能\SLG游戏画行军线\Test.cs" />
+    <Compile Include="Assets\功能\查找网格重建的具体UI元素\NewBehaviourScript.cs" />
+    <Compile Include="Assets\编辑器拓展\查找图片引用\SearchRefrenceEditorWindow.cs" />
+    <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.EntityContainer.cs" />
+    <Compile Include="Assets\数据结构\Collections\Tree.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Actions\DropOffFirewoodAction.cs" />
+    <Compile Include="Assets\流程\Procedure\DependenceModuleAttribute.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Actions\PickUpLogsAction.cs" />
+    <Compile Include="Assets\API使用\IO\Utility.IO.cs" />
+    <Compile Include="Assets\流程\Procedure\示例\FSM\FsmManager.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Labourers\职业\Miner.cs" />
+    <Compile Include="Assets\功能\SLG游戏画行军线\Resources\DrawLine\SetPropies.cs" />
+    <Compile Include="Assets\Excel插件编译\ExcelCompile.cs" />
+    <Compile Include="Assets\功能\计算代码运行时间\1\Utility.Time.cs" />
+    <Compile Include="Assets\功能\反射内存实力类查看数据\Test2.cs" />
+    <Compile Include="Assets\函数\判断物体前后点积\Dot1.cs" />
+    <Compile Include="Assets\API使用\旋转\Rotation.cs" />
+    <Compile Include="Assets\流程\Procedure\GameModuleBase.cs" />
+    <Compile Include="Assets\10万物品显示\SV\BagItem.cs" />
+    <Compile Include="Assets\API使用\Type类.cs" />
+    <Compile Include="Assets\功能\动态图集\1\Scripts\DynamicAtlasManager.cs" />
+    <Compile Include="Assets\碰撞检测\AABBCC\Edger.cs" />
+    <Compile Include="Assets\功能\调色\ColorManager.cs" />
+    <Compile Include="Assets\API使用\DateTime\DateTimeMono.cs" />
+    <Compile Include="Assets\流程\Procedure\示例\UIHelper.cs" />
+    <Compile Include="Assets\Shader\信号干扰Shader\testnoise.cs" />
+    <Compile Include="Assets\数据结构\Collections\List.cs" />
+    <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.cs" />
+    <Compile Include="Assets\API使用\序列化\Serialize\BinaryReader.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Labourers\Labourer.cs" />
+    <Compile Include="Assets\功能\血条跟随\Scripts\Player.cs" />
+    <Compile Include="Assets\功能\侧边弹窗\Test.cs" />
+    <Compile Include="Assets\Shader\基础\Test.cs" />
+    <Compile Include="Assets\流程\Procedure\示例\Entity\IEntityData.cs" />
+    <Compile Include="Assets\API使用\反射\HelperReflection.cs" />
+    <Compile Include="Assets\功能\SLG游戏画行军线\Resources\DrawLine\LineManager.cs" />
+    <Compile Include="Assets\数据结构\常见数据结构比较\DataStructure.cs" />
+    <Compile Include="Assets\数据结构\Collections\Graph.cs" />
+    <Compile Include="Assets\流程\Procedure\示例\FSM\MouseFsm\MouseFsm.cs" />
+    <Compile Include="Assets\面板拓展UI代码获取\1\CodeAutoGeneration\GenerateCodeWindow.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Actions\MineOreAction.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Labourers\职业\WoodCutter.cs" />
+    <Compile Include="Assets\10万物品显示\SV\CustomSV.cs" />
+    <Compile Include="Assets\功能\动态图集\Test.cs" />
+    <Compile Include="Assets\碰撞检测\AABBCC\IMathAABB.cs" />
+    <Compile Include="Assets\流程\Procedure\示例\Entity\EntityManager.EntityInfo.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\ForgeComponent.cs" />
+    <Compile Include="Assets\API使用\Assembly类.cs" />
+    <Compile Include="Assets\流程\Procedure\ProcedureBase.cs" />
+    <Compile Include="Assets\功能\柏林噪声\实现随机变形\ShapeOnGUI.cs" />
+    <Compile Include="Assets\功能\多语言\LanguageComponent.cs" />
+    <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\ToolComponent.cs" />
+    <Compile Include="Assets\API使用\序列化\Serialize\BinaryWriter.cs" />
     <Compile Include="Assets\流程\Procedure\ProcedureManager.cs" />
     <Compile Include="Assets\AI\GOAP\GameData\Labourers\物体组件\SupplyPileComponent.cs" />
     <None Include="Assets\Image自定义顶点数据实现圆角矩形\11.txt" />
@@ -846,17 +846,77 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>D:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PPv2URPConverters">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
@@ -867,8 +927,14 @@
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -876,17 +942,14 @@
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -894,32 +957,17 @@
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
@@ -930,11 +978,17 @@
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
@@ -942,14 +996,8 @@
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>H:\Project\Function\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
