@@ -31,3 +31,4 @@ Temp
 # *.vsconfig
 # .vs
 /Dlls
+/*.csproj
