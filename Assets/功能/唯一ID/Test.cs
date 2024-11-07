@@ -14,6 +14,8 @@ namespace 唯一ID
             //Machine5();
         }
 
+        //两种测试方法，均为500并发，生成5000个Id：
+        //Machine1() 模拟1台主机，单例模式获取实例
         static void Machine1()
         {
             for (int j = 0; j < 500; j++)
@@ -28,7 +30,8 @@ namespace 唯一ID
                 });
             }
         }
-
+        
+        //Machine5() 模拟5台主机，创建5个实例
         static void Machine5()
         {
             List<IdWorker> workers = new List<IdWorker>();
