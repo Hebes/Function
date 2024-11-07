@@ -3,6 +3,9 @@ using DG.Tweening;
 
 namespace 信号干扰Shader
 {
+    /// <summary>
+    /// https://blog.csdn.net/SnoopyNa2Co3/article/details/84673736 Unity信号干扰Shader
+    /// </summary>
     public class testnoise : MonoBehaviour
     {
         public Material mmm;
