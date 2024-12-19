@@ -12,6 +12,11 @@ namespace 多边形UI
     {
         private Vector2[] vertices;
 
+        public void Test()
+        {
+            
+        }
+
         protected override void OnPopulateMesh(VertexHelper vh)
         {
             vh.Clear();
