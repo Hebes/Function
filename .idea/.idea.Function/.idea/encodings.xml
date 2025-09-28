@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Assets/平台跳跃功能(不使用物理系统)/Scripts/CameraMove.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/平台跳跃功能(不使用物理系统)/Scripts/Platform.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/平台跳跃功能(不使用物理系统)/Scripts/PlatformDataMgr.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/平台跳跃功能(不使用物理系统)/Scripts/PlatformLogic.cs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Assets/平台跳跃功能(不使用物理系统)/Scripts/RoleObj.cs" charset="UTF-8" />
+  </component>
+</project>
