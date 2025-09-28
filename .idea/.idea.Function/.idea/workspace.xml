@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3fba78e-fed7-4cf3-9683-4b30f9a146e4" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/BlockerUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/BlockerUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/FunctionPeriodic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/FunctionPeriodic.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/FunctionTimer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/FunctionTimer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/InputWindowUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/InputWindowUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/RandomData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/聊天气泡/ChatBubble/Demo/RandomData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Function/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Function/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\16073\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\16073\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\16073\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\16073\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\16073\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\16073\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="附加到 Unity 编辑器.附加到 Unity 编辑器">
     <configuration name="启动 Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Unity.exe" />
@@ -104,6 +115,7 @@
       <workItem from="1734605763715" duration="143000" />
       <workItem from="1752053650516" duration="1746000" />
       <workItem from="1759065132848" duration="2519000" />
+      <workItem from="1759374012976" duration="972000" />
     </task>
     <servers />
   </component>
