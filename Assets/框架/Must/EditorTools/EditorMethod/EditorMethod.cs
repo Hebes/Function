@@ -67,13 +67,15 @@ public static partial class EditorMethod
         return key;
     }
     public static void EditorLog( this object message) => Debug.unityLogger.Log(LogType.Log, message);
-     /// <summary>
+
+    /// <summary>
     /// 用于继承自EditorWindow
     /// 用法：private void OnEnable() => this.Load();private void OnDisable() => this.Save();
     /// </summary>
     /// <param name="obj"></param>
+    /// <param name="fieldType"></param>
     /// <param name="value"></param>
-    public static void Save(this object obj, string value = default)
+    public static void Save(this object obj,  string value = default)
     {
         //if (!EditorWindow.HasOpenInstances<DataTools>()) return;
         BindingFlags bindingFlags = BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic;

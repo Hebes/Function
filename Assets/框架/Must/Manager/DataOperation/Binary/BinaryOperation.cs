@@ -16,7 +16,7 @@ using UnityEngine;
 
 namespace Framework.Core
 {
-    public class BinaryOperation : IDataHandle
+    public class BinaryOperation 
     {
         private static string SAVE_PATH = $"{Application.dataPath}/Excel2Script/Byte/";
 
@@ -50,12 +50,9 @@ namespace Framework.Core
             if (!Directory.Exists(filePath))
                 Directory.CreateDirectory(SAVE_PATH);
 
-            using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write))
-            {
-                BinaryFormatter bf = new BinaryFormatter();
-                bf.Serialize(fs, obj);
-                fs.Close();
-            }
+            using FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
+            BinaryFormatter bf = new BinaryFormatter();
+            bf.Serialize(fs, obj);
         }
     }
 }
